@@ -53,4 +53,3 @@ export function readLatest(){
  candidates.sort((a,b)=>b.time-a.time);
  return {data:candidates[0]?.data||null,invalid};
 }
-

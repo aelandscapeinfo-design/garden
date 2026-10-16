@@ -15,7 +15,7 @@ dist/index.html                  12.96 kB │ gzip:   4.49 kB
 dist/assets/index-xM49pceI.css   23.79 kB │ gzip:   5.71 kB
 dist/assets/index-DTNrpvHr.js   798.69 kB │ gzip: 218.58 kB
 
-✓ built in 309ms
+✓ built in 296ms
 [plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
