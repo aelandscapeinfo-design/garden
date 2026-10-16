@@ -1,0 +1,40 @@
+[
+  {
+    "dpr": 1,
+    "initial": {
+      "width": 1280,
+      "height": 822,
+      "pixelRatio": 1,
+      "lod": "far",
+      "drawCalls": 74,
+      "inkBatches": 6
+    },
+    "near": {
+      "lod": "near",
+      "drawCalls": 74,
+      "inkBatches": 6
+    },
+    "pngMatchesCanvas": true,
+    "errors": [],
+    "external": []
+  },
+  {
+    "dpr": 2,
+    "initial": {
+      "width": 1280,
+      "height": 822,
+      "pixelRatio": 1.5,
+      "lod": "far",
+      "drawCalls": 74,
+      "inkBatches": 6
+    },
+    "near": {
+      "lod": "near",
+      "drawCalls": 74,
+      "inkBatches": 6
+    },
+    "pngMatchesCanvas": true,
+    "errors": [],
+    "external": []
+  }
+]

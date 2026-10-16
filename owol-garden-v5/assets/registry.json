@@ -1,0 +1,354 @@
+[
+  {
+    "id": "owol-art-01-tree",
+    "type": "tree",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 25620,
+        "inkTriangles": 5250,
+        "totalTriangles": 30870,
+        "boundsM": [
+          2.921,
+          3.4,
+          2.513
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 12516,
+        "inkTriangles": 3990,
+        "totalTriangles": 16506,
+        "boundsM": [
+          2.92,
+          3.396,
+          2.513
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-shrub",
+    "type": "shrub",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 6700,
+        "inkTriangles": 2000,
+        "totalTriangles": 8700,
+        "boundsM": [
+          1.007,
+          0.758,
+          1.027
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 4900,
+        "inkTriangles": 1400,
+        "totalTriangles": 6300,
+        "boundsM": [
+          1.004,
+          0.757,
+          1.023
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-grass",
+    "type": "grass",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 1938,
+        "inkTriangles": 0,
+        "totalTriangles": 1938,
+        "boundsM": [
+          1.273,
+          1.059,
+          1.571
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 1362,
+        "inkTriangles": 0,
+        "totalTriangles": 1362,
+        "boundsM": [
+          1.273,
+          1.059,
+          1.571
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-v3-hosta",
+    "type": "hosta",
+    "reviewedForArtStudy": false,
+    "source": "src/models-v3.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "V3 original MeshStandardMaterial",
+    "textures": "V3 original procedural textures",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 864,
+        "inkTriangles": 0,
+        "totalTriangles": 864,
+        "boundsM": [
+          0.781,
+          0.449,
+          0.847
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 624,
+        "inkTriangles": 0,
+        "totalTriangles": 624,
+        "boundsM": [
+          0.781,
+          0.449,
+          0.847
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-flower",
+    "type": "flower",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 6090,
+        "inkTriangles": 2688,
+        "totalTriangles": 8778,
+        "boundsM": [
+          0.563,
+          0.966,
+          0.574
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 3738,
+        "inkTriangles": 1344,
+        "totalTriangles": 5082,
+        "boundsM": [
+          0.562,
+          0.966,
+          0.574
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-v3-meadow",
+    "type": "meadow",
+    "reviewedForArtStudy": false,
+    "source": "src/models-v3.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "V3 original MeshStandardMaterial",
+    "textures": "V3 original procedural textures",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 1664,
+        "inkTriangles": 0,
+        "totalTriangles": 1664,
+        "boundsM": [
+          0.394,
+          0.752,
+          0.484
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 1040,
+        "inkTriangles": 0,
+        "totalTriangles": 1040,
+        "boundsM": [
+          0.394,
+          0.752,
+          0.46
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-v3-cover",
+    "type": "cover",
+    "reviewedForArtStudy": false,
+    "source": "src/models-v3.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "V3 original MeshStandardMaterial",
+    "textures": "V3 original procedural textures",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 900,
+        "inkTriangles": 0,
+        "totalTriangles": 900,
+        "boundsM": [
+          0.685,
+          0.114,
+          0.701
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 504,
+        "inkTriangles": 0,
+        "totalTriangles": 504,
+        "boundsM": [
+          0.676,
+          0.114,
+          0.701
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-gravel",
+    "type": "gravel",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 128,
+        "inkTriangles": 0,
+        "totalTriangles": 128,
+        "boundsM": [
+          0.92,
+          0.045,
+          0.92
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 128,
+        "inkTriangles": 0,
+        "totalTriangles": 128,
+        "boundsM": [
+          0.92,
+          0.045,
+          0.92
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-stone",
+    "type": "stone",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 80,
+        "inkTriangles": 80,
+        "totalTriangles": 160,
+        "boundsM": [
+          0.754,
+          0.061,
+          0.674
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 80,
+        "inkTriangles": 80,
+        "totalTriangles": 160,
+        "boundsM": [
+          0.754,
+          0.061,
+          0.674
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-wood",
+    "type": "wood",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 648,
+        "inkTriangles": 648,
+        "totalTriangles": 1296,
+        "boundsM": [
+          0.75,
+          0.065,
+          0.816
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 648,
+        "inkTriangles": 648,
+        "totalTriangles": 1296,
+        "boundsM": [
+          0.75,
+          0.065,
+          0.816
+        ]
+      }
+    }
+  },
+  {
+    "id": "owol-art-01-bench",
+    "type": "bench",
+    "reviewedForArtStudy": true,
+    "source": "src/models-toon.js",
+    "thirdPartyArtwork": false,
+    "botanicalDataVerified": false,
+    "material": "MeshToonMaterial / 4-level nearest gradient; selective ink",
+    "textures": "256×256 painted surface maps, no normal/roughness maps",
+    "levels": {
+      "near": {
+        "surfaceTriangles": 1620,
+        "inkTriangles": 1620,
+        "totalTriangles": 3240,
+        "boundsM": [
+          1.62,
+          0.979,
+          0.647
+        ]
+      },
+      "far": {
+        "surfaceTriangles": 1620,
+        "inkTriangles": 1620,
+        "totalTriangles": 3240,
+        "boundsM": [
+          1.62,
+          0.979,
+          0.647
+        ]
+      }
+    }
+  }
+]

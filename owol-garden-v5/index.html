@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#243e32" />
+    <link rel="icon" href="data:," />
+    <title>OWOL — 머물고 싶은 나의 정원</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#" aria-label="오월 첫 화면"
+        >owol<span>오월</span></a
+      >
+      <nav aria-label="체험 단계">
+        <span class="current">01 정원을 만나다</span><i>—</i
+        ><button id="profile-open">02 나의 공간</button><i>—</i
+        ><span>03 취향을 가꾸다</span>
+      </nav>
+      <button id="board-open" class="primary">
+        이런 정원을 원해요 <span>↗</span>
+      </button>
+    </header>
+    <main id="studio">
+      <div id="scene"></div>
+      <div id="intro">
+        <div class="eyebrow">A LITTLE GARDEN, DRAWN WITH CARE</div>
+        <h1>잎을 그리고,<br />쉼을 가꾸다.</h1>
+        <p>
+          빛을 머금은 잎, 따뜻한 돌길.<br />한 장의 그림 같은 정원에 머물러보세요.
+        </p>
+        <div class="entry-actions">
+          <button id="start" class="text-link">내 정원으로 시작하기 ↗</button
+          ><button id="skip">이 정원 바꿔보기</button><button id="entry-templates">기본 구성 고르기</button><button id="entry-empty">빈 땅부터 만들기</button><button id="entry-load">저장한 정원 이어서</button>
+        </div>
+      </div>
+      <div class="view-switch" aria-label="정원 시점">
+        <button data-view="edit" class="active">편집</button
+        ><button data-view="browse">둘러보기</button
+        ><button data-view="entrance">입구에서</button
+        ><button data-view="seat">벤치에서</button>
+      </div>
+      <div id="view-note" hidden>
+        좌드래그 회전 · 우드래그 이동 · 휠 확대 / 터치: 한 손가락 회전 · 두
+        손가락 확대·이동
+      </div>
+      <div class="garden-caption">
+        <span>OWOL GARDEN — 04</span><strong>겹겹의 잎, 하나의 쉼.</strong
+        ><small id="profile-note"
+          >8 × 6 m 주택 앞마당 · 직접 정한 치수의 개념 모델입니다.</small
+        ><button id="edit-profile">내 공간 조건 입력 ↗</button>
+      </div>
+      <div id="selection" hidden>
+        <span id="selection-name"></span><button id="move">옮기기</button
+        ><button id="rotate">회전 ↻</button><button id="delete">지우기</button
+        ><button id="focus">초점</button>
+      </div>
+      <div class="camera-controls">
+        <button id="camera-home" aria-label="전체 보기">⌂</button>
+        <button id="zoom-in" aria-label="확대">＋</button
+        ><button id="zoom-out" aria-label="축소">−</button
+        ><button id="camera-rotate" aria-label="전체 시점 회전">↻</button
+        ><button id="quality" aria-label="표현 품질 전환">기본 표현</button>
+      </div>
+      <div class="history">
+        <button id="undo" aria-label="되돌리기">↶ <span>되돌리기</span></button
+        ><button id="redo" aria-label="다시 실행">
+          ↷ <span>다시 실행</span>
+        </button>
+      </div>
+      <div class="utilities">
+        <button id="save">저장</button><button id="load">불러오기</button
+        ><button id="scene-png">PNG ↓</button
+        ><button id="import-open">JSON ↑</button
+        ><button id="export-json">JSON ↓</button>
+      </div>
+      <aside id="toolbox">
+        <div class="composition-menu"><button id="compose-land">땅 크기</button><button id="compose-building">집 모양</button><button id="compose-patch">화단과 바닥</button><button id="compose-empty">새 빈 땅</button><button id="compose-templates">기본 구성</button></div>
+        <div class="palette-header">
+          <div class="tabs">
+            <button data-tab="plants" class="active">
+              식물 <small id="plant-types-count">04</small></button
+            ><button data-tab="surface">개별 포장 <small>03</small></button
+            ><button data-tab="objects">가구·소품</button>
+          </div>
+          <div class="palette-mode">
+            <span id="element-count"></span
+            ><button id="zone-open">고급 윤곽</button><button id="select-tool" class="active">↖ 선택</button>
+          </div>
+        </div>
+        <div id="palette"></div>
+        <div class="tool-note">
+          <span id="hint"
+            >소재를 고르고 정원에 놓아보세요. 식물은 표현용 모델입니다.</span
+          >
+          <div>
+            <button id="example">예시 정원</button
+            ><button id="empty">배치만 비우기</button>
+          </div>
+        </div>
+      </aside>
+      <button id="pending-open" hidden>
+        이동 대기함 <span id="pending-count">0</span>
+      </button>
+      <div id="camera-hint">
+        우드래그 회전 · 중드래그 / Shift+우드래그 이동 · 휠 확대
+      </div>
+      <div class="site-note">
+        취향을 탐색하는 체험입니다. 실제 식재와 시공은 현장 조건과 전문가 검토가
+        필요합니다.
+      </div>
+      <div id="art-note">카툰 정원 · 앞마당 4종 · 화단 윤곽을 직접 편집하세요</div>
+      <div class="credit">AE LANDSCAPE × OWOL</div>
+      <div id="toast" role="status"></div>
+      <div id="loading">
+        <span>owol</span>
+        <p>정원의 결을 준비하고 있어요.</p>
+      </div>
+    </main>
+    <dialog id="conditions">
+      <form id="condition-form">
+        <button
+          type="button"
+          class="close"
+          data-close="conditions"
+          aria-label="닫기"
+        >
+          ×
+        </button>
+        <div class="eyebrow">A LITTLE ABOUT YOUR PLACE</div>
+        <h2>당신의 정원은<br />어떤 곳인가요?</h2>
+        <p>아는 만큼만 알려주세요. 천천히 알아가도 괜찮아요.</p>
+        <div class="form-grid">
+          <label
+            >공간 유형<select name="space" id="preset">
+              <option value="front">주택 앞마당</option>
+              <option value="terrace">테라스</option>
+              <option value="courtyard">중정</option>
+              <option value="rooftop">옥상</option>
+              <option value="">모르겠어요 · 현재 공간 유지</option>
+            </select></label
+          >
+          <div class="dimensions">
+            <label
+              >가로 (m)<input
+                name="width"
+                type="number"
+                min="3"
+                max="16"
+                step=".25"
+                required /></label
+            ><label
+              >세로 (m)<input
+                name="depth"
+                type="number"
+                min="3"
+                max="16"
+                step=".25"
+                required
+            /></label>
+          </div>
+          <label
+            >햇빛 정도<select name="sun">
+              <option>모르겠어요</option>
+              <option>햇빛이 충분해요</option>
+              <option>반나절 정도 들어요</option>
+              <option>그늘이 많아요</option>
+            </select></label
+          >
+          <label
+            >원하는 분위기<select name="mood">
+              <option>모르겠어요</option>
+              <option>자연스럽고 편안하게</option>
+              <option>차분하고 정갈하게</option>
+              <option>풍성하고 생기 있게</option>
+              <option>고요하게 머물도록</option>
+            </select></label
+          >
+        </div>
+        <div class="space-preview">
+          <svg
+            id="space-preview"
+            viewBox="0 0 400 210"
+            role="img"
+            aria-label="변경할 정원 평면 미리보기"
+          ></svg>
+          <div>
+            <strong id="space-area"></strong>
+            <p id="space-impact"></p>
+          </div>
+        </div>
+        <fieldset id="zone-transfer-options" hidden><legend>직접 편집한 화단</legend><label><input type="radio" name="zoneTransfer" value="keep"> 현재 윤곽·높이·좌표 유지 (유효할 때)</label><label><input type="radio" name="zoneTransfer" value="reset"> 현재 정원 별도 저장 후 기본 화단 사용</label><p id="zone-transfer-impact"></p></fieldset>
+        <fieldset id="transfer-options">
+          <legend>현재 정원을 어떻게 이어갈까요?</legend>
+          <label
+            ><input type="radio" name="transfer" value="move" /> 현재 배치 이전
+            · 놓을 수 없는 요소는 대기함에 보관</label
+          >
+          <label
+            ><input type="radio" name="transfer" value="archive" /> 현재 정원
+            별도 저장 후 새 예시 정원 시작</label
+          >
+        </fieldset>
+        <div class="example-warning" id="space-warning">
+          직접 정한 치수의 개념 모델입니다. 현장을 측량·복원한 설계가 아닙니다.
+        </div>
+        <button class="primary wide" type="submit">미리본 공간 적용 ↗</button>
+        <button id="condition-skip" type="button" class="quiet wide">
+          취소 · 지금 정원 계속 보기
+        </button>
+        <small
+          >개인정보·서버 전송 없음 · 햇빛 입력으로 식물 적합성을 판정하지
+          않습니다.</small
+        >
+      </form>
+    </dialog>
+    <dialog id="pending-dialog">
+      <button class="close" data-close="pending-dialog" aria-label="닫기">
+        ×
+      </button>
+      <div class="eyebrow">A PLACE FOR EVERY PLANT</div>
+      <h2>다음 자리를 기다려요.</h2>
+      <p>
+        공간을 바꾸며 놓을 수 없어진 요소입니다. 선택하고 정원의 유효한 자리에
+        놓아주세요. 저장·내보내기에도 함께 보관됩니다.
+      </p>
+      <div id="pending-list"></div>
+    </dialog>
+    <dialog id="import-dialog">
+      <button class="close" data-close="import-dialog" aria-label="닫기">
+        ×
+      </button>
+      <h2>정원 기록을 불러와요.</h2>
+      <p>
+        V2 / V3 / V4 / V5 JSON을 검증한 뒤 불러옵니다. 현재 정원은 되돌리기로 복구할 수
+        있어요.
+      </p>
+      <input
+        id="import-file"
+        type="file"
+        accept=".json,application/json"
+      /><button id="previous-load" type="button">이전 V4·V3 저장 가져오기</button><button id="legacy-load" class="quiet wide">
+        이 브라우저의 V2 저장 가져오기
+      </button>
+      <div id="archive-list"></div>
+      <small
+        >브라우저·주소·파일 위치가 달라지면 로컬 저장소가 공유되지 않을 수
+        있어요. 옮길 때는 JSON을 사용하세요.</small
+      >
+    </dialog>
+    <dialog id="confirm">
+      <div class="eyebrow">A NEW BEGINNING</div>
+      <h2 id="confirm-title">정원을 비울까요?</h2>
+      <p>현재 배치가 바뀝니다. 되돌리기로 복구할 수 있어요.</p>
+      <div class="dialog-actions">
+        <button id="confirm-cancel">취소</button
+        ><button id="confirm-go" class="primary">시작하기</button>
+      </div>
+    </dialog>
+    <dialog id="board">
+      <button class="close" data-close="board" aria-label="닫기">×</button>
+      <div class="eyebrow">MY OWOL / GARDEN MOODBOARD</div>
+      <h2>이런 정원을 원해요.</h2>
+      <p class="board-sub">당신의 취향을 담은 정원 노트</p>
+      <img id="board-image" alt="직접 구성한 정원 이미지" />
+      <div id="board-conditions"></div>
+      <section>
+        <h3>내가 고른 풍경</h3>
+        <p id="board-elements"></p>
+        <p id="board-materials"></p>
+      </section>
+      <label class="wish-label"
+        >정원에서 하고 싶은 일, 한 줄<textarea
+          id="wish"
+          maxlength="120"
+          rows="2"
+          placeholder="예: 아침에 커피를 마시며 잎이 흔들리는 모습을 보고 싶어요."
+        ></textarea>
+      </label>
+      <div class="board-actions">
+        <button id="board-save" class="primary">이 브라우저에 저장</button
+        ><button id="board-png">취향 보드 PNG ↓</button
+        ><button id="board-json">데이터 JSON ↓</button>
+      </div>
+      <p class="board-disclaimer">
+        상담 자료를 준비하는 체험입니다. 실제 접수·전송은 이루어지지
+        않습니다.<br />실제 식재와 시공은 현장 조건과 전문가 검토가 필요합니다.
+      </p>
+      <small
+        >예시 정원 · 표현용 식물 모델 · 전문 설계도나 생육 시뮬레이션이
+        아닙니다.</small
+      >
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

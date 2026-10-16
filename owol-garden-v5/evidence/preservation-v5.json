@@ -1,0 +1,11 @@
+{
+  "originalV4FilesChecked": 24,
+  "originalV4ChangedFiles": [],
+  "identicalV4V5Modules": {
+    "src/models-toon.js": true,
+    "src/toon-style.js": true,
+    "src/camera-controller.js": true,
+    "src/interaction.js": true,
+    "src/models-v3.js": true
+  }
+}

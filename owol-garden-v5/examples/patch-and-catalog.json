@@ -1,0 +1,341 @@
+{
+  "version": 5,
+  "documentVersion": 5,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 1,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "presetId": "front",
+    "widthM": 6,
+    "depthM": 4.5,
+    "seed": 3107,
+    "boundary": [
+      [
+        -3,
+        -2.25
+      ],
+      [
+        3,
+        -2.25
+      ],
+      [
+        3,
+        2.25
+      ],
+      [
+        -3,
+        2.25
+      ]
+    ],
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [
+        {
+          "id": "region-1792137901693",
+          "name": "면 포장",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -1,
+                  -1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  -1,
+                  1
+                ],
+                [
+                  -1,
+                  -1
+                ]
+              ],
+              [
+                [
+                  -0.25,
+                  -0.25
+                ],
+                [
+                  -0.25,
+                  0.25
+                ],
+                [
+                  0.25,
+                  0.25
+                ],
+                [
+                  0.25,
+                  -0.25
+                ],
+                [
+                  -0.25,
+                  -0.25
+                ]
+              ]
+            ]
+          ],
+          "material": "wood",
+          "pattern": "deck",
+          "direction": 90,
+          "moduleM": 0.3,
+          "seed": 3107,
+          "edge": "ordered"
+        },
+        {
+          "id": "region-1792137907165",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -2.25,
+                  -1.25
+                ],
+                [
+                  -1.25,
+                  -1.25
+                ],
+                [
+                  -1.25,
+                  -0.25
+                ],
+                [
+                  -2.25,
+                  -0.25
+                ],
+                [
+                  -2.25,
+                  -1.25
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        }
+      ],
+      "planters": [],
+      "buildings": [],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "schemaVersion": 5,
+    "customZones": false,
+    "representsRealSite": false,
+    "walls": [],
+    "openings": [],
+    "obstacles": [],
+    "plantableZones": [
+      {
+        "id": "region-1792137907165",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -2.25,
+                -1.25
+              ],
+              [
+                -1.25,
+                -1.25
+              ],
+              [
+                -1.25,
+                -0.25
+              ],
+              [
+                -2.25,
+                -0.25
+              ],
+              [
+                -2.25,
+                -1.25
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -2.25,
+            -1.25
+          ],
+          [
+            -1.25,
+            -1.25
+          ],
+          [
+            -1.25,
+            -0.25
+          ],
+          [
+            -2.25,
+            -0.25
+          ]
+        ],
+        "height": 0.03
+      }
+    ],
+    "surfaces": [
+      {
+        "id": "region-1792137901693",
+        "name": "면 포장",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -1,
+                -1
+              ],
+              [
+                1,
+                -1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                -1,
+                1
+              ],
+              [
+                -1,
+                -1
+              ]
+            ],
+            [
+              [
+                -0.25,
+                -0.25
+              ],
+              [
+                -0.25,
+                0.25
+              ],
+              [
+                0.25,
+                0.25
+              ],
+              [
+                0.25,
+                -0.25
+              ],
+              [
+                -0.25,
+                -0.25
+              ]
+            ]
+          ]
+        ],
+        "material": "wood",
+        "pattern": "deck",
+        "direction": 90,
+        "moduleM": 0.3,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "height": 0.045
+      }
+    ],
+    "viewpoints": {
+      "full": {
+        "position": [
+          5.64,
+          6.300000000000001,
+          5.3999999999999995
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower",
+      "id": 1,
+      "type": "flower",
+      "x": -1.75,
+      "z": -0.75,
+      "r": 0,
+      "scale": 1,
+      "variant": 1
+    }
+  ],
+  "pending": [],
+  "profile": {
+    "space": "모르겠어요",
+    "size": "모르겠어요",
+    "sun": "모르겠어요",
+    "mood": "모르겠어요"
+  },
+  "wish": "",
+  "camera": {
+    "position": [
+      5.459999999999999,
+      5.699999999999999,
+      6.7799999999999985
+    ],
+    "target": [
+      0,
+      0.65,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

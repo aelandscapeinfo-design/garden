@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r186/examples/webgl_materials_toon.html",
+    "status": 200,
+    "bytes": 5455
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r186/examples/jsm/effects/OutlineEffect.js",
+    "status": 200,
+    "bytes": 12661
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r186/src/materials/MeshToonMaterial.js",
+    "status": 200,
+    "bytes": 9742
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r186/LICENSE",
+    "status": 200,
+    "bytes": 1081
+  }
+]

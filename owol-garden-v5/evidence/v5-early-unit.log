@@ -1,0 +1,73 @@
+✔ front valid generated example and schema round-trip (47.896515ms)
+✔ terrace valid generated example and schema round-trip (8.943514ms)
+✔ courtyard valid generated example and schema round-trip (20.920045ms)
+✔ rooftop valid generated example and schema round-trip (17.931718ms)
+✔ terrace protects tiled/deck floor, door and railing; planter accepts planting (0.621484ms)
+✔ front soil accepts plants; permanent walk and door stay clear (0.457246ms)
+✔ dimensions regenerate all spatial definitions; transfer retains every ID (7.613481ms)
+✔ V2 always migrates to legacy 8×8 irrespective of profile (14.78345ms)
+✔ invalid versions, duplicate IDs, invalid dimensions and unsafe placement rejected (14.250112ms)
+✔ bench approach rotates with geometry (0.689471ms)
+✔ prototype names are not valid asset or preset identifiers (0.262332ms)
+✔ rotated paving keeps its full physical footprint within the boundary (0.256731ms)
+✔ finite simple concave contours retain area; crossing and degenerate controls fail (1.512102ms)
+✔ entire long edges crossing a protected narrow corridor are rejected (6.648183ms)
+✔ circle containment detects narrow notches missed by fixed perimeter samples (0.335038ms)
+✔ rounded contour is shared deterministic data and cannot cross a protected concave notch (4.70862ms)
+✔ boundary, zone overlap, wall gap, height and untrusted rounding are validated (1.551226ms)
+✖ V4 keeps exact custom controls, effective polygon, ID, area and pending across round trips (33.78346ms)
+✖ V3 canonical migration preserves original file and all items; V4 does not regenerate custom contours (6.162473ms)
+✔ untrusted controls and canonical origin cannot bypass buildings, paths or benches (26.935052ms)
+✔ delete and shrink preserve all plant IDs in placed + pending; a restored record restores coordinates (3.773118ms)
+✔ raised planter outline and height share planting and ground elevation; transfer is explicit and validated (4.070054ms)
+✔ later furniture or paving cannot make a custom-zone save invalid (3.21929ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 21
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 265.595399
+
+✖ failing tests:
+
+test at tests/zones.test.mjs:10:1
+✖ V4 keeps exact custom controls, effective polygon, ID, area and pending across round trips (33.78346ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  5 !== 4
+  
+      at TestContext.<anonymous> (file:///workspace/garden/owol-garden-v5/tests/zones.test.mjs:13:50)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/zones.test.mjs:17:1
+✖ V3 canonical migration preserves original file and all items; V4 does not regenerate custom contours (6.162473ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  5 !== 4
+  
+      at TestContext.<anonymous> (file:///workspace/garden/owol-garden-v5/tests/zones.test.mjs:18:170)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 5,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

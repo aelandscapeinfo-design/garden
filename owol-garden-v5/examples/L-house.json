@@ -1,0 +1,192 @@
+{
+  "version": 5,
+  "documentVersion": 5,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 1,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 10,
+    "depthM": 10,
+    "seed": 3107,
+    "boundary": [
+      [
+        -5,
+        -5
+      ],
+      [
+        5,
+        -5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        -5,
+        5
+      ]
+    ],
+    "surfaces": [],
+    "plantableZones": [],
+    "obstacles": [
+      {
+        "id": "house-1792137888406",
+        "polygon": [
+          [
+            -1.9999999999999998,
+            -4
+          ],
+          [
+            -2,
+            1.9999999999999998
+          ],
+          [
+            -1.0000000000000002,
+            2
+          ],
+          [
+            -0.9999999999999999,
+            -3
+          ],
+          [
+            2,
+            -3
+          ],
+          [
+            2,
+            -4
+          ]
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "id": "house-1792137888406-door",
+        "x": 0.5000000000000001,
+        "z": -3,
+        "width": 0.8,
+        "height": 2.15,
+        "normal": [
+          0,
+          1
+        ],
+        "tangent": [
+          1,
+          0
+        ],
+        "clearance": [
+          [
+            0.0500000000000001,
+            -2.985
+          ],
+          [
+            0.9500000000000002,
+            -2.985
+          ],
+          [
+            0.9500000000000002,
+            -2
+          ],
+          [
+            0.0500000000000001,
+            -2
+          ]
+        ],
+        "segment": 3,
+        "offset": 0.5
+      }
+    ],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          9.399999999999999,
+          10.5,
+          12
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      },
+      "entrance": {
+        "position": [
+          0.5000000000000001,
+          1.65,
+          -1.9
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [],
+      "planters": [],
+      "buildings": [
+        {
+          "id": "house-1792137888406",
+          "shape": "L",
+          "width": 6,
+          "depth": 4,
+          "wing": 1,
+          "height": 2.65,
+          "x": 0,
+          "z": -1,
+          "rotation": 90,
+          "mirrored": true,
+          "door": {
+            "segment": 3,
+            "offset": 0.5,
+            "width": 0.8
+          }
+        }
+      ],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [],
+  "pending": [],
+  "profile": {
+    "space": "모르겠어요",
+    "size": "모르겠어요",
+    "sun": "모르겠어요",
+    "mood": "모르겠어요"
+  },
+  "wish": "",
+  "camera": {
+    "position": [
+      5.459999999999999,
+      5.699999999999999,
+      6.7799999999999985
+    ],
+    "target": [
+      0,
+      0.65,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

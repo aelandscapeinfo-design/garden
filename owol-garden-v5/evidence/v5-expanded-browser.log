@@ -1,0 +1,72 @@
+
+Running 4 tests using 1 worker
+
+(node:63870) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] tests/composition.spec.js:12:1 › V4 scene and PNG stay exact; truly blank earth survives resize save reload
+[2/4] tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real
+  1) tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real 
+
+    Error: expect(locator).toBeEnabled() failed
+
+    Locator:  locator('#building-apply')
+    Expected: enabled
+    Received: disabled
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeEnabled" locator('#building-apply') with timeout 15000ms
+      - waiting for locator('#building-apply')
+        34 × locator resolved to <button disabled class="primary" id="building-apply">건물 변경 적용</button>
+           - unexpected value "disabled"
+
+
+      20 | test('building footprint, rotation mirror door, pending and JSON restoration are real',async({page:p})=>{
+      21 |  await start(p);await empty(p);await p.locator('#compose-land').click();await p.locator('#site-width').fill('10');await p.locator('#site-depth').fill('10');await p.locator('#composition-apply').click();await wait(p);
+    > 22 |  await p.locator('#compose-building').click();await p.locator('#building-new').click();await p.locator('#building-width').fill('6');await p.locator('#building-depth').fill('4');await p.locator('#building-z').fill('-1');await p.locator('#building-wing').fill('1');await p.locator('#building-shape').selectOption('L');await p.locator('#building-rotation').selectOption('90');await p.locator('#building-mirror').check();await expect(p.locator('#building-apply')).toBeEnabled();await p.screenshot({path:'evidence/v5-building-editor.png'});await p.locator('#building-apply').click();await wait(p);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+      23 |  const l=doc(await state(p)),building=l.config.composition.buildings[0];expect(building.shape).toBe('L');expect(l.config.obstacles[0].polygon).toHaveLength(6);expect(l.config.openings[0].segment).toBe(3);const saved=await exported(p);await fs.mkdir('examples',{recursive:true});await fs.writeFile('examples/L-house.json',JSON.stringify(saved,null,2));
+      24 |  await p.locator('#compose-building').click();await p.locator('#building-shape').selectOption('U');await expect(p.locator('#building-apply')).toBeDisabled();await p.locator('#building-door-confirm').check();await expect(p.locator('#building-apply')).toBeEnabled();await p.locator('#building-apply').click();await wait(p);const u=doc(await state(p));expect(u.config.obstacles[0].polygon).toHaveLength(8);expect(u.config.openings[0].segment).toBe(4);await fs.writeFile('examples/U-house.json',JSON.stringify(await exported(p),null,2));
+      25 |  await p.locator('#undo').click();expect(doc(await state(p))).toEqual(l);await p.locator('#redo').click();expect(doc(await state(p))).toEqual(u);await p.locator('#save').click();await p.reload();await wait(p);await p.locator('#load').click();await wait(p);expect(doc(await state(p))).toEqual(u);
+        at /workspace/garden/owol-garden-v5/tests/composition.spec.js:22:461
+
+    Error Context: test-results/composition-building-footp-8abf7-d-JSON-restoration-are-real/error-context.md
+
+
+(node:64052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/4] tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places
+  2) tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places 
+
+    Error: ENOENT: no such file or directory, open 'examples/patch-and-catalog.json'
+
+      30 |  await p.locator('#save').click();await p.reload();await wait(p);await p.locator('#load').click();expect(doc(await state(p))).toEqual(d);const png=p.waitForEvent('download');await p.locator('#scene-png').click();await(await png).saveAs('evidence/v5-paving.png');
+      31 |  await p.locator('#plant-growth').selectOption('tree');await expect(p.locator('#palette .asset')).toHaveCount(1);await expect(p.locator('[data-type=tree]')).toBeVisible();await p.locator('#plant-growth').selectOption('herb');await p.locator('#plant-filters summary').click();await p.locator('#plant-flower').selectOption('purple');await p.locator('#plant-texture').selectOption('fine');await expect(p.locator('#palette .asset')).toHaveCount(1);await expect(p.locator('[data-type=flower]')).toBeVisible();await p.locator('#plant-growth').selectOption('tree');await expect(p.locator('#palette .asset')).toHaveCount(0);await expect(p.locator('#plant-no-results')).toBeVisible();await p.locator('#plant-reset').click();await expect(p.locator('#palette .asset')).toHaveCount(4);
+    > 32 |  await p.locator('#compose-patch').click();await p.locator('[data-patch-mode=new]').click();await p.locator('#patch-kind').selectOption('planting');await p.locator('#patch-size').selectOption('1');await click(p,-1.75,-.75);await p.locator('#patch-apply').click();await p.locator('[data-type=flower]').click();await click(p,-1.75,-.75);expect((await state(p)).items[0].catalogId).toBe('owol-form-flower');await p.locator('#plant-info').click();await expect(p.locator('#plant-detail')).toContainText('미확인');await p.locator('#plant-detail .close').click();await fs.writeFile('examples/patch-and-catalog.json',JSON.stringify(await exported(p),null,2));
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+      33 | });
+      34 | test('real brush stroke, plant, subtract hole, pending, undo and persistence',async({page:p})=>{
+      35 |  await start(p);await empty(p);await p.locator('#compose-patch').click();await p.locator('[data-patch-mode=new]').click();await p.locator('#patch-size').selectOption('2');await click(p,0,0);
+        at /workspace/garden/owol-garden-v5/tests/composition.spec.js:32:554
+
+    Error Context: test-results/composition-paving-pattern-88003-actually-filters-and-places/error-context.md
+
+
+(node:64186) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[4/4] tests/composition.spec.js:34:1 › real brush stroke, plant, subtract hole, pending, undo and persistence
+  2 failed
+    tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real 
+    tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places 
+  2 passed (1.0m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

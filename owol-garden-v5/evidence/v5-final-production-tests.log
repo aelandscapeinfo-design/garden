@@ -1,0 +1,35 @@
+
+Running 23 tests using 1 worker
+
+(node:69877) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/art.spec.js:4:1 › packaged art render: exact scene PNG, near/far LOD, DPR and no external runtime requests (16.9s)
+  ✓   2 tests/composition.spec.js:12:1 › V4 scene and PNG stay exact; truly blank earth survives resize save reload (14.5s)
+  ✓   3 tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real (13.7s)
+  ✓   4 tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places (11.3s)
+  ✓   5 tests/composition.spec.js:34:1 › real brush stroke, plant, subtract hole, pending, undo and persistence (9.3s)
+  ✓   6 tests/composition.spec.js:43:1 › 30 patch strokes reuse assets; draft undo, cancellation and camera do not corrupt document (23.3s)
+  ✓   7 tests/composition.spec.js:52:1 › ten actual templates, optional plants, original storage protection and storage errors (19.6s)
+  ✓   8 tests/composition.spec.js:58:1 › mobile 390 by 844 real touch brush, two-finger cancel, fold and save (6.8s)
+  ✓   9 tests/composition.spec.js:66:1 › duplicate merge move convert and raised planter change actual geometry and restore (12.9s)
+  ✓  10 tests/composition.spec.js:75:1 › paving settings before first brush are honored and six combinations render differently (10.6s)
+  ✓  11 tests/garden.spec.js:51:1 › four actual presets: geometry, refresh restore, JSON roundtrip and captures (40.0s)
+  ✓  12 tests/garden.spec.js:90:1 › dimensions, explicit cancel/transfer, pending tray and undo protect every object (17.0s)
+  ✓  13 tests/garden.spec.js:136:1 › place move rotate delete undo redo, PNG and taste board exports (14.3s)
+  ✓  14 tests/garden.spec.js:184:1 › camera orbit/pan/zoom twenty each never place or create history; transition and input cancellation (51.8s)
+  ✓  15 tests/garden.spec.js:239:1 › paint stroke has one undo; pointercancel, blur and UI never leave a stuck stroke (7.5s)
+  ✓  16 tests/garden.spec.js:290:1 › V2 migration preserves its slot, rejects malformed JSON and unknown versions (6.2s)
+  ✓  17 tests/garden.spec.js:322:1 › mobile touch editing and browsing gestures are separate; resize has no overflow (6.5s)
+  ✓  18 tests/garden.spec.js:374:1 › reduced motion, two-touch cancellation in edit and mobile paint history (4.3s)
+  ✓  19 tests/zones.spec.js:17:1 › zone vertices, local gesture history, curve, scale, atomic apply and all storage round trips (17.8s)
+  ✓  20 tests/zones.spec.js:33:1 › new contour, whole translation, delete and restoration preserve every plant (8.9s)
+  ✓  21 tests/zones.spec.js:43:1 › invalid preview, pointer cancellation, camera gestures and Escape never change saved geometry (11.2s)
+  ✓  22 tests/zones.spec.js:50:1 › raised planter mesh/height and custom contour transfer across dimensions (11.8s)
+  ✓  23 tests/zones.spec.js:57:1 › mobile contour touch edits, two-touch cancellation and camera mode stay separate (4.8s)
+
+  23 passed (5.7m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

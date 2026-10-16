@@ -1,0 +1,21 @@
+{
+  "archives": [
+    {
+      "name": "OWOL-garden-v5-run.zip",
+      "bytes": 5064197,
+      "files": 17,
+      "sha256": "da2ef760d208e4decc88884cd7cdb7d6a41ff3e39d9b3efee84d44218a022486",
+      "integrity": "ok"
+    },
+    {
+      "name": "OWOL-garden-v5-source.zip",
+      "bytes": 23092483,
+      "files": 163,
+      "sha256": "9d9fbb2a10e9cb46c08ffda14bcf04d630e82c46132be9ea9fd8afefce9f304e",
+      "integrity": "ok"
+    }
+  ],
+  "testedHtmlSha256": "7cd4ce6499386197fc78a6c54292fb8e48ef306ef348d86da81867676997f09b",
+  "servedHtmlMatchesRunAndSourceZip": true,
+  "sourceDistMatchesTestedBuild": true
+}

@@ -1,0 +1,38 @@
+
+> owol-garden-v5@5.0.0 test
+> playwright test --reporter=line
+
+
+Running 21 tests using 1 worker
+
+(node:66224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/21] tests/art.spec.js:4:1 › packaged art render: exact scene PNG, near/far LOD, DPR and no external runtime requests
+[2/21] tests/composition.spec.js:12:1 › V4 scene and PNG stay exact; truly blank earth survives resize save reload
+[3/21] tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real
+[4/21] tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places
+[5/21] tests/composition.spec.js:34:1 › real brush stroke, plant, subtract hole, pending, undo and persistence
+[6/21] tests/composition.spec.js:43:1 › 30 patch strokes reuse assets; draft undo, cancellation and camera do not corrupt document
+[7/21] tests/composition.spec.js:52:1 › ten actual templates, optional plants, original storage protection and storage errors
+[8/21] tests/composition.spec.js:58:1 › mobile 390 by 844 real touch brush, two-finger cancel, fold and save
+[9/21] tests/garden.spec.js:51:1 › four actual presets: geometry, refresh restore, JSON roundtrip and captures
+[10/21] tests/garden.spec.js:90:1 › dimensions, explicit cancel/transfer, pending tray and undo protect every object
+[11/21] tests/garden.spec.js:136:1 › place move rotate delete undo redo, PNG and taste board exports
+[12/21] tests/garden.spec.js:184:1 › camera orbit/pan/zoom twenty each never place or create history; transition and input cancellation
+[13/21] tests/garden.spec.js:239:1 › paint stroke has one undo; pointercancel, blur and UI never leave a stuck stroke
+[14/21] tests/garden.spec.js:290:1 › V2 migration preserves its slot, rejects malformed JSON and unknown versions
+[15/21] tests/garden.spec.js:322:1 › mobile touch editing and browsing gestures are separate; resize has no overflow
+[16/21] tests/garden.spec.js:374:1 › reduced motion, two-touch cancellation in edit and mobile paint history
+[17/21] tests/zones.spec.js:17:1 › zone vertices, local gesture history, curve, scale, atomic apply and all storage round trips
+[18/21] tests/zones.spec.js:33:1 › new contour, whole translation, delete and restoration preserve every plant
+[19/21] tests/zones.spec.js:43:1 › invalid preview, pointer cancellation, camera gestures and Escape never change saved geometry
+[20/21] tests/zones.spec.js:50:1 › raised planter mesh/height and custom contour transfer across dimensions
+[21/21] tests/zones.spec.js:57:1 › mobile contour touch edits, two-touch cancellation and camera mode stay separate
+  21 passed (5.4m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

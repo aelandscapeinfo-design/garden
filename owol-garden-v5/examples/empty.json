@@ -1,0 +1,96 @@
+{
+  "version": 5,
+  "documentVersion": 5,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 1,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 6,
+    "depthM": 4.5,
+    "seed": 3107,
+    "boundary": [
+      [
+        -3,
+        -2.25
+      ],
+      [
+        3,
+        -2.25
+      ],
+      [
+        3,
+        2.25
+      ],
+      [
+        -3,
+        2.25
+      ]
+    ],
+    "surfaces": [],
+    "plantableZones": [],
+    "obstacles": [],
+    "openings": [],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          5.64,
+          6.300000000000001,
+          5.3999999999999995
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [],
+      "planters": [],
+      "buildings": [],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [],
+  "pending": [],
+  "profile": {
+    "space": "모르겠어요",
+    "size": "모르겠어요",
+    "sun": "모르겠어요",
+    "mood": "모르겠어요"
+  },
+  "wish": "",
+  "camera": {
+    "position": [
+      5.459999999999999,
+      5.699999999999999,
+      6.7799999999999985
+    ],
+    "target": [
+      0,
+      0.65,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

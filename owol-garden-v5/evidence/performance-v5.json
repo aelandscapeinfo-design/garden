@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-16T08:00:49.171Z",
+  "environment": {
+    "browser": "154.0.8037.57",
+    "os": "linux",
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "allocatedCpuCount": 4,
+    "viewport": [
+      1440,
+      960
+    ],
+    "canvas": [
+      1440,
+      882
+    ],
+    "dpr": 1,
+    "quality": "standard",
+    "items": 19,
+    "plants": 18
+  },
+  "method": "One sequential observation per build; identical JSON fixture, steady geometry counters after PNG render (no shadow refresh); 24-step actual right mouse drag; RAF frame intervals include software rendering and browser input. Pointermove to next RAF callback is reported separately; it is not proof of display paint latency. Not a physical GPU or mobile measurement.",
+  "results": [
+    {
+      "label": "V4 baseline",
+      "initial": {
+        "drawCalls": 44,
+        "triangles": 95410,
+        "textureBytesEstimate": 2097168,
+        "lod": "far"
+      },
+      "inputToNextRafMs": [
+        1.8999999985098839,
+        1.8000000044703484,
+        1.3999999985098839,
+        1.9000000059604645,
+        1.8000000044703484,
+        1.8000000044703484,
+        1.8999999985098839,
+        6,
+        1.3999999985098839,
+        1.4000000059604645,
+        1.6000000014901161,
+        1.2999999970197678,
+        1.7000000029802322,
+        1.3999999985098839,
+        1.7000000029802322,
+        1.3000000044703484,
+        1,
+        1.2000000029802322,
+        1.2000000029802322,
+        4,
+        1.6999999955296516,
+        1.6000000014901161,
+        1,
+        1.6999999955296516
+      ],
+      "constructions": 9,
+      "geometries": 61,
+      "frames": 26,
+      "p50": 266.8,
+      "p95": 550,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": []
+    },
+    {
+      "label": "V5 composition",
+      "initial": {
+        "drawCalls": 44,
+        "triangles": 95410,
+        "textureBytesEstimate": 2097168,
+        "lod": "far"
+      },
+      "inputToNextRafMs": [
+        6.100000001490116,
+        1.7000000029802322,
+        5.200000002980232,
+        3.5,
+        3.9000000059604645,
+        2,
+        7.0999999940395355,
+        3.7000000029802322,
+        1.3999999985098839,
+        2.0999999940395355,
+        6.9000000059604645,
+        4.299999997019768,
+        1.2999999970197678,
+        1.2000000029802322,
+        1,
+        1,
+        2.2000000029802322,
+        1.1000000014901161,
+        1.3999999985098839,
+        1.1000000014901161,
+        1.2000000029802322,
+        1.6000000014901161,
+        1,
+        1
+      ],
+      "constructions": 9,
+      "geometries": 61,
+      "frames": 26,
+      "p50": 283.3,
+      "p95": 750,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "errors": []
+    }
+  ]
+}

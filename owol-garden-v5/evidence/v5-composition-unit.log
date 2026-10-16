@@ -1,0 +1,48 @@
+✔ truly empty site has zero structures, stays empty on resize and V5 roundtrip (4.37329ms)
+✔ patch geometry is shared by actual placement and restoration (11.82739ms)
+✔ subtraction preserves holes and islands, area excludes holes; round trip is exact (11.816048ms)
+✔ fast interpolated stroke is continuous and leaves unrelated region unchanged (21.409865ms)
+✔ planting to paving relocates without loss, original catalog refs survive (2.07136ms)
+✔ V4 imports preserve every original coordinate and render geometry until explicit editing (5.338367ms)
+✔ malformed, duplicate, nonfinite, future and excessive geometry are rejected (1.960251ms)
+✔ unknown catalogue reference is preserved in pending with reason, not dropped (1.130016ms)
+✔ catalogue multi-axis filters intersect and biological data remains unknown (0.431678ms)
+✖ all ten templates have actual distinct compositions, valid example placement and restoration (7.419154ms)
+✔ rectangle, L, U exact areas, rotated mirrored door and concave footprint (1.249731ms)
+✔ invalid buildings, blocked door and out of bounds planter cannot be saved (6.848135ms)
+✔ building hides ground without deleting it; removal restores original region (1.256513ms)
+✔ clearance grid detects severed access; no nonexistent door on empty site (13.409573ms)
+✔ explicit merge, clone and smooth edges keep geometry valid and stable (3.01163ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 14
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 216.82933
+
+✖ failing tests:
+
+test at tests/composition.test.mjs:54:1
+✖ all ten templates have actual distinct compositions, valid example placement and restoration (7.419154ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '나무 줄기 바로 위에는 놓을 수 없어요.'
+  - null
+  
+      at TestContext.<anonymous> (file:///workspace/garden/owol-garden-v5/tests/composition.test.mjs:55:277)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '나무 줄기 바로 위에는 놓을 수 없어요.',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

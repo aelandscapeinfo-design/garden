@@ -1,0 +1,17 @@
+
+Running 4 tests using 1 worker
+
+(node:64710) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] tests/composition.spec.js:12:1 › V4 scene and PNG stay exact; truly blank earth survives resize save reload
+[2/4] tests/composition.spec.js:20:1 › building footprint, rotation mirror door, pending and JSON restoration are real
+[3/4] tests/composition.spec.js:27:1 › paving pattern, material direction and hole survive; taxonomy actually filters and places
+[4/4] tests/composition.spec.js:34:1 › real brush stroke, plant, subtract hole, pending, undo and persistence
+  4 passed (50.7s)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -1,0 +1,47 @@
+✔ truly empty site has zero structures, stays empty on resize and V5 roundtrip (5.464558ms)
+✔ patch geometry is shared by actual placement and restoration (9.000303ms)
+✔ subtraction preserves holes and islands, area excludes holes; round trip is exact (16.495007ms)
+✔ fast interpolated stroke is continuous and leaves unrelated region unchanged (26.836412ms)
+✔ planting to paving relocates without loss, original catalog refs survive (2.416458ms)
+✔ V4 imports preserve every original coordinate and render geometry until explicit editing (13.002322ms)
+✔ malformed, duplicate, nonfinite, future and excessive geometry are rejected (2.405717ms)
+✔ unknown catalogue reference is preserved in pending with reason, not dropped (1.077088ms)
+✔ catalogue multi-axis filters intersect and biological data remains unknown (0.38481ms)
+✔ all ten templates have actual distinct compositions, valid example placement and restoration (163.55928ms)
+✔ rectangle, L, U exact areas, rotated mirrored door and concave footprint (0.695663ms)
+✔ invalid buildings, blocked door and out of bounds planter cannot be saved (35.757288ms)
+✔ building hides ground without deleting it; removal restores original region (1.162569ms)
+✔ clearance grid detects severed access; no nonexistent door on empty site (15.286092ms)
+✔ explicit merge, clone and smooth edges keep geometry valid and stable (2.772805ms)
+✔ centred resize clips ground, preserves item coordinates and rejects fixed safety shells (2.795097ms)
+✔ front valid generated example and schema round-trip (116.438373ms)
+✔ terrace valid generated example and schema round-trip (9.719732ms)
+✔ courtyard valid generated example and schema round-trip (83.130913ms)
+✔ rooftop valid generated example and schema round-trip (25.325072ms)
+✔ terrace protects tiled/deck floor, door and railing; planter accepts planting (0.838601ms)
+✔ front soil accepts plants; permanent walk and door stay clear (0.535704ms)
+✔ dimensions regenerate all spatial definitions; transfer retains every ID (14.396615ms)
+✔ V2 always migrates to legacy 8×8 irrespective of profile (15.089213ms)
+✔ invalid versions, duplicate IDs, invalid dimensions and unsafe placement rejected (26.580695ms)
+✔ bench approach rotates with geometry (1.029589ms)
+✔ prototype names are not valid asset or preset identifiers (0.42666ms)
+✔ rotated paving keeps its full physical footprint within the boundary (0.278462ms)
+✔ finite simple concave contours retain area; crossing and degenerate controls fail (1.558901ms)
+✔ entire long edges crossing a protected narrow corridor are rejected (7.644173ms)
+✔ circle containment detects narrow notches missed by fixed perimeter samples (0.348232ms)
+✔ rounded contour is shared deterministic data and cannot cross a protected concave notch (4.558922ms)
+✔ boundary, zone overlap, wall gap, height and untrusted rounding are validated (1.316597ms)
+✔ V4 keeps exact custom controls, effective polygon, ID, area and pending across round trips (72.871721ms)
+✔ V3 canonical migration preserves original file and all items; V4 does not regenerate custom contours (5.312594ms)
+✔ untrusted controls and canonical origin cannot bypass buildings, paths or benches (29.098775ms)
+✔ delete and shrink preserve all plant IDs in placed + pending; a restored record restores coordinates (28.059957ms)
+✔ raised planter outline and height share planting and ground elevation; transfer is explicit and validated (7.577336ms)
+✔ later furniture or paving cannot make a custom-zone save invalid (6.14256ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 510.478788
