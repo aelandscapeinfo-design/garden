@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "preferredBlog": {
+    "url": "https://blog.naver.com/decogardening",
+    "status": "not-accessible-via-web-tool",
+    "verifiedPosts": 0
+  },
+  "speciesReferenceTexts": {
+    "provider": "NC State Extension Gardener Plant Toolbox",
+    "pagesRead": 12,
+    "status": "text-readable"
+  },
+  "originalPhotoAccessAttempts": [
+    {
+      "species": "Hydrangea paniculata",
+      "imageLabel": "2 large shrubs with terminal conical panicles",
+      "status": "403 Forbidden"
+    },
+    {
+      "species": "Spiraea japonica",
+      "imageLabel": "growth habit",
+      "status": "403 Forbidden"
+    }
+  ],
+  "remainingPhotos": "not visually reviewed; no access bypass attempted",
+  "bundledThirdPartyPhotoCount": 0,
+  "limitation": "Text-informed shape studies. No photo-level, cultivar-level or botanical expert validation."
+}

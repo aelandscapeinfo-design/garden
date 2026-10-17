@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-17",
+  "hardware": {
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "cpuCount": 5
+  },
+  "browser": "154.0.8037.57",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "dpr": 1,
+  "measurements": [
+    {
+      "count": 50,
+      "loadAndSettleMs": 782,
+      "drawCalls": 113,
+      "triangles": 68916,
+      "textureBytesEstimate": 1048592,
+      "geometries": 164,
+      "prototypes": 49,
+      "samples": 12,
+      "medianRenderAndReadbackMs": 157.2,
+      "medianFrameIntervalMs": 166.6,
+      "p95FrameIntervalMs": 183.4,
+      "approxLoopFps": 6,
+      "lod": "far",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "note": "Render timing includes synchronous one-pixel readback to drain the GPU command queue and browser round-trip overhead; not pure GPU time. Frame intervals are requestAnimationFrame gaps in this synthetic loop, not a hardware-device FPS guarantee."
+    },
+    {
+      "count": 150,
+      "loadAndSettleMs": 44,
+      "drawCalls": 113,
+      "triangles": 201402,
+      "textureBytesEstimate": 1048592,
+      "geometries": 164,
+      "prototypes": 49,
+      "samples": 12,
+      "medianRenderAndReadbackMs": 285.5,
+      "medianFrameIntervalMs": 300,
+      "p95FrameIntervalMs": 316.6,
+      "approxLoopFps": 3.33,
+      "lod": "far",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "note": "Render timing includes synchronous one-pixel readback to drain the GPU command queue and browser round-trip overhead; not pure GPU time. Frame intervals are requestAnimationFrame gaps in this synthetic loop, not a hardware-device FPS guarantee."
+    },
+    {
+      "count": 300,
+      "loadAndSettleMs": 71,
+      "drawCalls": 113,
+      "triangles": 403610,
+      "textureBytesEstimate": 1048592,
+      "geometries": 164,
+      "prototypes": 49,
+      "samples": 12,
+      "medianRenderAndReadbackMs": 463.6,
+      "medianFrameIntervalMs": 466.7,
+      "p95FrameIntervalMs": 516.6,
+      "approxLoopFps": 2.14,
+      "lod": "far",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "note": "Render timing includes synchronous one-pixel readback to drain the GPU command queue and browser round-trip overhead; not pure GPU time. Frame intervals are requestAnimationFrame gaps in this synthetic loop, not a hardware-device FPS guarantee."
+    }
+  ],
+  "memoryCycles": [
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    },
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    },
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    },
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    },
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    },
+    {
+      "geometries": 82,
+      "textures": 19,
+      "prototypes": 21
+    }
+  ],
+  "memoryStableAfterWarmup": true,
+  "errors": [],
+  "limitations": "Linux Chromium SwiftShader software rendering. Synchronous readback loop and warm caches; not real-phone FPS, hardware GPU time, heap leak proof or a 30fps guarantee. Camera is fixed. Shadow refresh on every frame is not measured.",
+  "initialUnfencedMemoryCycles": [
+    {
+      "geometries": 175,
+      "textures": 19,
+      "prototypes": 52
+    },
+    {
+      "geometries": 175,
+      "textures": 19,
+      "prototypes": 52
+    },
+    {
+      "geometries": 168,
+      "textures": 19,
+      "prototypes": 52
+    },
+    {
+      "geometries": 175,
+      "textures": 19,
+      "prototypes": 52
+    },
+    {
+      "geometries": 181,
+      "textures": 19,
+      "prototypes": 52
+    },
+    {
+      "geometries": 175,
+      "textures": 19,
+      "prototypes": 52
+    }
+  ],
+  "memoryMethod": "Separate fresh browser. Two warm-up round trips, six measured round trips. One animation-frame boundary and synchronous renderer/readback fence after each import; counts sampled after drawing. Initial asynchronous samples retained separately."
+}

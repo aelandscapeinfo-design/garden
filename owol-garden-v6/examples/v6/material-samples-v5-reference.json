@@ -1,0 +1,967 @@
+{
+  "version": 5,
+  "documentVersion": 5,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 1,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 6,
+    "depthM": 6,
+    "seed": 3107,
+    "boundary": [
+      [
+        -3,
+        -3
+      ],
+      [
+        3,
+        -3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        -3,
+        3
+      ]
+    ],
+    "surfaces": [
+      {
+        "id": "sample-1",
+        "name": "잔디",
+        "kind": "lawn",
+        "geometry": [
+          [
+            [
+              [
+                -0.75,
+                -2.55
+              ],
+              [
+                0.75,
+                -2.55
+              ],
+              [
+                0.75,
+                -1.05
+              ],
+              [
+                -0.75,
+                -1.05
+              ],
+              [
+                -0.75,
+                -2.55
+              ]
+            ]
+          ]
+        ],
+        "material": "turf",
+        "pattern": "continuous",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3108,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -0.75,
+            -2.55
+          ],
+          [
+            0.75,
+            -2.55
+          ],
+          [
+            0.75,
+            -1.05
+          ],
+          [
+            -0.75,
+            -1.05
+          ]
+        ],
+        "height": 0.04
+      },
+      {
+        "id": "sample-3",
+        "name": "자갈",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -2.55,
+                -0.75
+              ],
+              [
+                -1.05,
+                -0.75
+              ],
+              [
+                -1.05,
+                0.75
+              ],
+              [
+                -2.55,
+                0.75
+              ],
+              [
+                -2.55,
+                -0.75
+              ]
+            ]
+          ]
+        ],
+        "material": "gravel",
+        "pattern": "continuous",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3110,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -2.55,
+            -0.75
+          ],
+          [
+            -1.05,
+            -0.75
+          ],
+          [
+            -1.05,
+            0.75
+          ],
+          [
+            -2.55,
+            0.75
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "sample-4",
+        "name": "정형 판석",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -0.75,
+                -0.75
+              ],
+              [
+                0.75,
+                -0.75
+              ],
+              [
+                0.75,
+                0.75
+              ],
+              [
+                -0.75,
+                0.75
+              ],
+              [
+                -0.75,
+                -0.75
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3111,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -0.75,
+            -0.75
+          ],
+          [
+            0.75,
+            -0.75
+          ],
+          [
+            0.75,
+            0.75
+          ],
+          [
+            -0.75,
+            0.75
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "sample-5",
+        "name": "부정형 판석",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                1.05,
+                -0.75
+              ],
+              [
+                2.55,
+                -0.75
+              ],
+              [
+                2.55,
+                0.75
+              ],
+              [
+                1.05,
+                0.75
+              ],
+              [
+                1.05,
+                -0.75
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "irregular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3112,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            1.05,
+            -0.75
+          ],
+          [
+            2.55,
+            -0.75
+          ],
+          [
+            2.55,
+            0.75
+          ],
+          [
+            1.05,
+            0.75
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "sample-6",
+        "name": "콘크리트",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -2.55,
+                1.05
+              ],
+              [
+                -1.05,
+                1.05
+              ],
+              [
+                -1.05,
+                2.55
+              ],
+              [
+                -2.55,
+                2.55
+              ],
+              [
+                -2.55,
+                1.05
+              ]
+            ]
+          ]
+        ],
+        "material": "concrete",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3113,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -2.55,
+            1.05
+          ],
+          [
+            -1.05,
+            1.05
+          ],
+          [
+            -1.05,
+            2.55
+          ],
+          [
+            -2.55,
+            2.55
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "sample-7",
+        "name": "데크",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -0.75,
+                1.05
+              ],
+              [
+                0.75,
+                1.05
+              ],
+              [
+                0.75,
+                2.55
+              ],
+              [
+                -0.75,
+                2.55
+              ],
+              [
+                -0.75,
+                1.05
+              ]
+            ]
+          ]
+        ],
+        "material": "wood",
+        "pattern": "deck",
+        "direction": 0,
+        "moduleM": 0.18,
+        "seed": 3114,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -0.75,
+            1.05
+          ],
+          [
+            0.75,
+            1.05
+          ],
+          [
+            0.75,
+            2.55
+          ],
+          [
+            -0.75,
+            2.55
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "sample-8",
+        "name": "작은 블록",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                1.05,
+                1.05
+              ],
+              [
+                2.55,
+                1.05
+              ],
+              [
+                2.55,
+                2.55
+              ],
+              [
+                1.05,
+                2.55
+              ],
+              [
+                1.05,
+                1.05
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "blocks",
+        "direction": 0,
+        "moduleM": 0.22,
+        "seed": 3115,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            1.05,
+            1.05
+          ],
+          [
+            2.55,
+            1.05
+          ],
+          [
+            2.55,
+            2.55
+          ],
+          [
+            1.05,
+            2.55
+          ]
+        ],
+        "height": 0.045
+      }
+    ],
+    "plantableZones": [
+      {
+        "id": "sample-0",
+        "name": "흙",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -2.55,
+                -2.55
+              ],
+              [
+                -1.05,
+                -2.55
+              ],
+              [
+                -1.05,
+                -1.05
+              ],
+              [
+                -2.55,
+                -1.05
+              ],
+              [
+                -2.55,
+                -2.55
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "continuous",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -2.55,
+            -2.55
+          ],
+          [
+            -1.05,
+            -2.55
+          ],
+          [
+            -1.05,
+            -1.05
+          ],
+          [
+            -2.55,
+            -1.05
+          ]
+        ],
+        "height": 0.03
+      },
+      {
+        "id": "sample-2",
+        "name": "바크",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                1.05,
+                -2.55
+              ],
+              [
+                2.55,
+                -2.55
+              ],
+              [
+                2.55,
+                -1.05
+              ],
+              [
+                1.05,
+                -1.05
+              ],
+              [
+                1.05,
+                -2.55
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "continuous",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3109,
+        "jointWidthM": 0.016,
+        "surfaceMaterialId": "mulch",
+        "edge": "ordered",
+        "polygon": [
+          [
+            1.05,
+            -2.55
+          ],
+          [
+            2.55,
+            -2.55
+          ],
+          [
+            2.55,
+            -1.05
+          ],
+          [
+            1.05,
+            -1.05
+          ]
+        ],
+        "height": 0.03
+      }
+    ],
+    "obstacles": [],
+    "openings": [],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          5.64,
+          6.300000000000001,
+          7.199999999999999
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [
+        {
+          "id": "sample-0",
+          "name": "흙",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -2.55,
+                  -2.55
+                ],
+                [
+                  -1.05,
+                  -2.55
+                ],
+                [
+                  -1.05,
+                  -1.05
+                ],
+                [
+                  -2.55,
+                  -1.05
+                ],
+                [
+                  -2.55,
+                  -2.55
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "continuous",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-1",
+          "name": "잔디",
+          "kind": "lawn",
+          "geometry": [
+            [
+              [
+                [
+                  -0.75,
+                  -2.55
+                ],
+                [
+                  0.75,
+                  -2.55
+                ],
+                [
+                  0.75,
+                  -1.05
+                ],
+                [
+                  -0.75,
+                  -1.05
+                ],
+                [
+                  -0.75,
+                  -2.55
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "continuous",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3108,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-2",
+          "name": "바크",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  1.05,
+                  -2.55
+                ],
+                [
+                  2.55,
+                  -2.55
+                ],
+                [
+                  2.55,
+                  -1.05
+                ],
+                [
+                  1.05,
+                  -1.05
+                ],
+                [
+                  1.05,
+                  -2.55
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "continuous",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3109,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "mulch",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-3",
+          "name": "자갈",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -2.55,
+                  -0.75
+                ],
+                [
+                  -1.05,
+                  -0.75
+                ],
+                [
+                  -1.05,
+                  0.75
+                ],
+                [
+                  -2.55,
+                  0.75
+                ],
+                [
+                  -2.55,
+                  -0.75
+                ]
+              ]
+            ]
+          ],
+          "material": "gravel",
+          "pattern": "continuous",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3110,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-4",
+          "name": "정형 판석",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -0.75,
+                  -0.75
+                ],
+                [
+                  0.75,
+                  -0.75
+                ],
+                [
+                  0.75,
+                  0.75
+                ],
+                [
+                  -0.75,
+                  0.75
+                ],
+                [
+                  -0.75,
+                  -0.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3111,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-5",
+          "name": "부정형 판석",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  1.05,
+                  -0.75
+                ],
+                [
+                  2.55,
+                  -0.75
+                ],
+                [
+                  2.55,
+                  0.75
+                ],
+                [
+                  1.05,
+                  0.75
+                ],
+                [
+                  1.05,
+                  -0.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "irregular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3112,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-6",
+          "name": "콘크리트",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -2.55,
+                  1.05
+                ],
+                [
+                  -1.05,
+                  1.05
+                ],
+                [
+                  -1.05,
+                  2.55
+                ],
+                [
+                  -2.55,
+                  2.55
+                ],
+                [
+                  -2.55,
+                  1.05
+                ]
+              ]
+            ]
+          ],
+          "material": "concrete",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3113,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-7",
+          "name": "데크",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -0.75,
+                  1.05
+                ],
+                [
+                  0.75,
+                  1.05
+                ],
+                [
+                  0.75,
+                  2.55
+                ],
+                [
+                  -0.75,
+                  2.55
+                ],
+                [
+                  -0.75,
+                  1.05
+                ]
+              ]
+            ]
+          ],
+          "material": "wood",
+          "pattern": "deck",
+          "direction": 0,
+          "moduleM": 0.18,
+          "seed": 3114,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "sample-8",
+          "name": "작은 블록",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  1.05,
+                  1.05
+                ],
+                [
+                  2.55,
+                  1.05
+                ],
+                [
+                  2.55,
+                  2.55
+                ],
+                [
+                  1.05,
+                  2.55
+                ],
+                [
+                  1.05,
+                  1.05
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "blocks",
+          "direction": 0,
+          "moduleM": 0.22,
+          "seed": 3115,
+          "jointWidthM": 0.016,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        }
+      ],
+      "planters": [],
+      "buildings": [],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [],
+  "pending": [],
+  "profile": {},
+  "wish": "",
+  "camera": {
+    "position": [
+      7,
+      9,
+      10
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

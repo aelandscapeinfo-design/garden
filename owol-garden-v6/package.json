@@ -1,0 +1,21 @@
+{
+  "name": "owol-garden-v6",
+  "version": "6.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5186 --strictPort",
+    "build": "vite build",
+    "test": "playwright test",
+    "package": "npm run build && node scripts/package.mjs",
+    "test:unit": "node --test tests/scene.test.mjs tests/zone-foundation.test.mjs tests/zones.test.mjs tests/composition.test.mjs tests/v6.test.mjs"
+  },
+  "dependencies": {
+    "polygon-clipping": "0.15.7",
+    "three": "0.186.1",
+    "vite": "8.3.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

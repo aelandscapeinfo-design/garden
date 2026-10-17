@@ -1,0 +1,58 @@
+{
+  "baselineRepository": "aelandscapeinfo-design/garden",
+  "baselineBranch": "codex/owol-v5-composition-20261016",
+  "baselineCommit": "dab07e18f0e542306b09fa28cc99a2998d7e230e",
+  "branch": "codex/owol-v6-recovery-20261017",
+  "status": "V6 material and twelve-asset shape study; not full V6 or 36 species",
+  "counts": {
+    "newPlaceableAssets": 12,
+    "distinctNewMorphologies": 12,
+    "structuralVariantsPerAsset": 3,
+    "totalNewStructuralVariants": 36,
+    "newColorOnlyCatalogueVariants": 0,
+    "remainingTo36Assets": 24
+  },
+  "testedHtmlSha256": "217221d7b2ff188eea09930fa9bda720479ab303e844c5540caf335d880784e3",
+  "servedHtmlMatchesRunZip": true,
+  "files": [
+    {
+      "name": "OWOL-garden-v6-run.zip",
+      "bytes": 1378867,
+      "files": 18,
+      "sha256": "6c8c51187129cfabd5bac1eb38fc003a9f821ca8bd08c260493a1bf23125ce29",
+      "integrity": "ok"
+    },
+    {
+      "name": "OWOL-garden-v6-source.zip",
+      "bytes": 7582116,
+      "files": 134,
+      "sha256": "ce6b4a37a3689c086721761c334727006e4a79710a8e6d4828a6263c78164250",
+      "integrity": "ok"
+    },
+    {
+      "name": "OWOL-garden-v6-review.html",
+      "bytes": 1513659,
+      "sha256": "5f65210c849cd4e4489602b6bb18bcd625018b4f7ce1ce86a0caf830fe28cf93"
+    },
+    {
+      "name": "OWOL-garden-v6-plant-contact-sheet.png",
+      "bytes": 357747,
+      "sha256": "b9468627bb9793be41b44605f4f1ea3900af4db0b9c0a83786e7ea60df219301"
+    },
+    {
+      "name": "OWOL-materials-before-V5.png",
+      "bytes": 141122,
+      "sha256": "733402de06ffeabb68c83f6b2dde30eec08ff3cc194ac4c30131356a45b1136d"
+    },
+    {
+      "name": "OWOL-materials-after-V6.png",
+      "bytes": 251264,
+      "sha256": "acb2bcd07ee52a81cca420c629a7cf3df47a889d4669d016ea40407b967dfe7c"
+    },
+    {
+      "name": "OWOL-garden-v6-preview.png",
+      "bytes": 383088,
+      "sha256": "e02f14f6e0efa1b0e69408c9f7bb58e40c225ec179bdebf3997f2a902800a0dd"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-17",
+  "status": "passed-publication-checks",
+  "baselineCommit": "dab07e18f0e542306b09fa28cc99a2998d7e230e",
+  "newCommitBasedDirectlyOnBaseline": true,
+  "internalPromptsIncluded": false,
+  "privateOperationLogsIncluded": false,
+  "temporaryUploadUrlsIncluded": false,
+  "credentialPatternFindings": 0,
+  "archiveMembersInspected": 152,
+  "pngMetadataChunksFound": 0,
+  "applicationHtmlSha256": "217221d7b2ff188eea09930fa9bda720479ab303e844c5540caf335d880784e3",
+  "applicationSourceUnchangedDuringPublicPackaging": true,
+  "limitations": "Pattern scans plus manual review; not a guarantee against every possible secret. Third-party license text is retained."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "materialId": "soil",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.014,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "mulch",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.024,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "gravel",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.022,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "stone",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.005,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "concrete",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.003,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "wood",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.88,
+    "bumpScale": 0.006,
+    "externalAssets": false,
+    "textureResolution": 256
+  },
+  {
+    "materialId": "turf",
+    "colorSpace": "sRGB",
+    "heightColorSpace": "linear",
+    "metersPerTile": 1,
+    "roughness": 0.97,
+    "bumpScale": 0.009,
+    "externalAssets": false,
+    "textureResolution": 256
+  }
+]

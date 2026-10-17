@@ -1,0 +1,1015 @@
+{
+  "version": 5,
+  "documentVersion": 5,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 1,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 10,
+    "depthM": 10,
+    "seed": 3107,
+    "boundary": [
+      [
+        -5,
+        -5
+      ],
+      [
+        5,
+        -5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        -5,
+        5
+      ]
+    ],
+    "surfaces": [
+      {
+        "id": "quiet-lawn",
+        "name": "잔디",
+        "kind": "lawn",
+        "geometry": [
+          [
+            [
+              [
+                -1.6,
+                0.4
+              ],
+              [
+                -1.2,
+                0.4
+              ],
+              [
+                -1.2,
+                2.6
+              ],
+              [
+                -1.6,
+                2.6
+              ],
+              [
+                -1.6,
+                0.4
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                0,
+                0.4
+              ],
+              [
+                1.6,
+                0.4
+              ],
+              [
+                1.6,
+                2.6
+              ],
+              [
+                0,
+                2.6
+              ],
+              [
+                0,
+                0.4
+              ]
+            ]
+          ]
+        ],
+        "material": "turf",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -1.6,
+            0.4
+          ],
+          [
+            -1.2,
+            0.4
+          ],
+          [
+            -1.2,
+            2.6
+          ],
+          [
+            -1.6,
+            2.6
+          ]
+        ],
+        "height": 0.04
+      },
+      {
+        "id": "court-path",
+        "name": "면 포장",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                -1.2,
+                -2.6
+              ],
+              [
+                0,
+                -2.6
+              ],
+              [
+                0,
+                4.75
+              ],
+              [
+                -1.2,
+                4.75
+              ],
+              [
+                -1.2,
+                -2.6
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -1.2,
+            -2.6
+          ],
+          [
+            0,
+            -2.6
+          ],
+          [
+            0,
+            4.75
+          ],
+          [
+            -1.2,
+            4.75
+          ]
+        ],
+        "height": 0.045
+      }
+    ],
+    "plantableZones": [
+      {
+        "id": "edge-bed",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -4.75,
+                -0.9
+              ],
+              [
+                -4,
+                -0.9
+              ],
+              [
+                -4,
+                0.2
+              ],
+              [
+                -3.95,
+                0.2
+              ],
+              [
+                -3.95,
+                3.9
+              ],
+              [
+                -4.75,
+                3.9
+              ],
+              [
+                -4.75,
+                -0.9
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -4.75,
+            -0.9
+          ],
+          [
+            -4,
+            -0.9
+          ],
+          [
+            -4,
+            0.2
+          ],
+          [
+            -3.95,
+            0.2
+          ],
+          [
+            -3.95,
+            3.9
+          ],
+          [
+            -4.75,
+            3.9
+          ]
+        ],
+        "height": 0.03
+      },
+      {
+        "id": "south-drift",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -1.9,
+                3.65
+              ],
+              [
+                -1.2,
+                3.65
+              ],
+              [
+                -1.2,
+                4.75
+              ],
+              [
+                -1.9,
+                4.75
+              ],
+              [
+                -1.9,
+                3.65
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                0,
+                3.65
+              ],
+              [
+                3.9,
+                3.65
+              ],
+              [
+                3.9,
+                4.75
+              ],
+              [
+                0,
+                4.75
+              ],
+              [
+                0,
+                3.65
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            -1.9,
+            3.65
+          ],
+          [
+            -1.2,
+            3.65
+          ],
+          [
+            -1.2,
+            4.75
+          ],
+          [
+            -1.9,
+            4.75
+          ]
+        ],
+        "height": 0.03
+      },
+      {
+        "id": "east-drift",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                3.7,
+                -1
+              ],
+              [
+                4.8,
+                -1
+              ],
+              [
+                4.8,
+                2.8
+              ],
+              [
+                3.7,
+                2.8
+              ],
+              [
+                3.7,
+                -1
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "edge": "ordered",
+        "polygon": [
+          [
+            3.7,
+            -1
+          ],
+          [
+            4.8,
+            -1
+          ],
+          [
+            4.8,
+            2.8
+          ],
+          [
+            3.7,
+            2.8
+          ]
+        ],
+        "height": 0.03
+      }
+    ],
+    "obstacles": [
+      {
+        "id": "house",
+        "polygon": [
+          [
+            -4,
+            -3.8
+          ],
+          [
+            2,
+            -3.8
+          ],
+          [
+            2,
+            -2.5999999999999996
+          ],
+          [
+            -2.8,
+            -2.5999999999999996
+          ],
+          [
+            -2.8,
+            0.20000000000000018
+          ],
+          [
+            -4,
+            0.20000000000000018
+          ]
+        ]
+      }
+    ],
+    "openings": [
+      {
+        "id": "house-door",
+        "x": -2.8,
+        "z": -1.1999999999999997,
+        "width": 0.9,
+        "height": 2.15,
+        "normal": [
+          1,
+          0
+        ],
+        "tangent": [
+          0,
+          1
+        ],
+        "clearance": [
+          [
+            -2.7849999999999997,
+            -1.6999999999999997
+          ],
+          [
+            -2.7849999999999997,
+            -0.6999999999999997
+          ],
+          [
+            -1.7999999999999998,
+            -0.6999999999999997
+          ],
+          [
+            -1.7999999999999998,
+            -1.6999999999999997
+          ]
+        ],
+        "segment": 3,
+        "offset": 0.5
+      }
+    ],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          9.399999999999999,
+          10.5,
+          12
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      },
+      "entrance": {
+        "position": [
+          -1.6999999999999997,
+          1.65,
+          -1.1999999999999997
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "L",
+      "baseFloor": "soil",
+      "regions": [
+        {
+          "id": "edge-bed",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -4.75,
+                  -0.9
+                ],
+                [
+                  -3.95,
+                  -0.9
+                ],
+                [
+                  -3.95,
+                  3.9
+                ],
+                [
+                  -4.75,
+                  3.9
+                ],
+                [
+                  -4.75,
+                  -0.9
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        },
+        {
+          "id": "south-drift",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -1.9,
+                  3.65
+                ],
+                [
+                  -1.2,
+                  3.65
+                ],
+                [
+                  -1.2,
+                  4.75
+                ],
+                [
+                  -1.9,
+                  4.75
+                ],
+                [
+                  -1.9,
+                  3.65
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  3.65
+                ],
+                [
+                  3.9,
+                  3.65
+                ],
+                [
+                  3.9,
+                  4.75
+                ],
+                [
+                  0,
+                  4.75
+                ],
+                [
+                  0,
+                  3.65
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        },
+        {
+          "id": "east-drift",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  3.7,
+                  -1
+                ],
+                [
+                  4.8,
+                  -1
+                ],
+                [
+                  4.8,
+                  2.8
+                ],
+                [
+                  3.7,
+                  2.8
+                ],
+                [
+                  3.7,
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        },
+        {
+          "id": "quiet-lawn",
+          "name": "잔디",
+          "kind": "lawn",
+          "geometry": [
+            [
+              [
+                [
+                  -1.6,
+                  0.4
+                ],
+                [
+                  -1.2,
+                  0.4
+                ],
+                [
+                  -1.2,
+                  2.6
+                ],
+                [
+                  -1.6,
+                  2.6
+                ],
+                [
+                  -1.6,
+                  0.4
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  0,
+                  0.4
+                ],
+                [
+                  1.6,
+                  0.4
+                ],
+                [
+                  1.6,
+                  2.6
+                ],
+                [
+                  0,
+                  2.6
+                ],
+                [
+                  0,
+                  0.4
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        },
+        {
+          "id": "court-path",
+          "name": "면 포장",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  -1.2,
+                  -2.75
+                ],
+                [
+                  0,
+                  -2.75
+                ],
+                [
+                  0,
+                  4.75
+                ],
+                [
+                  -1.2,
+                  4.75
+                ],
+                [
+                  -1.2,
+                  -2.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "edge": "ordered"
+        }
+      ],
+      "planters": [],
+      "buildings": [
+        {
+          "id": "house",
+          "shape": "L",
+          "width": 6,
+          "depth": 4,
+          "wing": 1.2,
+          "height": 2.65,
+          "x": -1,
+          "z": -1.7999999999999998,
+          "rotation": 0,
+          "mirrored": false,
+          "door": {
+            "segment": 3,
+            "offset": 0.5,
+            "width": 0.9
+          }
+        }
+      ],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [
+    {
+      "id": 1,
+      "type": "tree",
+      "x": -4.5,
+      "z": -0.6,
+      "r": 35,
+      "scale": 0.75,
+      "variant": 1,
+      "catalogId": "owol-form-tree",
+      "assetId": "owol-toon-02-tree"
+    },
+    {
+      "id": 2,
+      "type": "grass",
+      "x": -4.5,
+      "z": 0.05,
+      "r": 70,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 3,
+      "type": "flower",
+      "x": -4.5,
+      "z": 0.7,
+      "r": 105,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower"
+    },
+    {
+      "id": 4,
+      "type": "grass",
+      "x": -4.5,
+      "z": 1.35,
+      "r": 140,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 5,
+      "type": "shrub",
+      "x": -4.5,
+      "z": 2,
+      "r": 175,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-shrub",
+      "assetId": "owol-toon-02-shrub"
+    },
+    {
+      "id": 6,
+      "type": "grass",
+      "x": -4.5,
+      "z": 2.65,
+      "r": 210,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 7,
+      "type": "flower",
+      "x": -4.5,
+      "z": 3.3,
+      "r": 245,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower"
+    },
+    {
+      "id": 8,
+      "type": "tree",
+      "x": 0.7,
+      "z": 3.95,
+      "r": 280,
+      "scale": 0.75,
+      "variant": 2,
+      "catalogId": "owol-form-tree",
+      "assetId": "owol-toon-02-tree"
+    },
+    {
+      "id": 9,
+      "type": "grass",
+      "x": 1.35,
+      "z": 3.95,
+      "r": 315,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 10,
+      "type": "flower",
+      "x": 2,
+      "z": 3.95,
+      "r": 350,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower"
+    },
+    {
+      "id": 11,
+      "type": "grass",
+      "x": 2.65,
+      "z": 3.95,
+      "r": 25,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 12,
+      "type": "shrub",
+      "x": 3.3,
+      "z": 3.95,
+      "r": 60,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-shrub",
+      "assetId": "owol-toon-02-shrub"
+    },
+    {
+      "id": 13,
+      "type": "tree",
+      "x": 3.95,
+      "z": -0.6,
+      "r": 95,
+      "scale": 0.75,
+      "variant": 1,
+      "catalogId": "owol-form-tree",
+      "assetId": "owol-toon-02-tree"
+    },
+    {
+      "id": 14,
+      "type": "grass",
+      "x": 4.6,
+      "z": -0.6,
+      "r": 130,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 15,
+      "type": "flower",
+      "x": 3.95,
+      "z": 0.05,
+      "r": 165,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower"
+    },
+    {
+      "id": 16,
+      "type": "grass",
+      "x": 4.6,
+      "z": 0.05,
+      "r": 200,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 17,
+      "type": "shrub",
+      "x": 3.95,
+      "z": 0.7,
+      "r": 235,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-shrub",
+      "assetId": "owol-toon-02-shrub"
+    },
+    {
+      "id": 18,
+      "type": "grass",
+      "x": 4.6,
+      "z": 0.7,
+      "r": 270,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 19,
+      "type": "flower",
+      "x": 3.95,
+      "z": 1.35,
+      "r": 305,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-flower",
+      "assetId": "owol-toon-02-flower"
+    },
+    {
+      "id": 20,
+      "type": "grass",
+      "x": 4.6,
+      "z": 1.35,
+      "r": 340,
+      "scale": 0.95,
+      "variant": 2,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    },
+    {
+      "id": 21,
+      "type": "shrub",
+      "x": 3.95,
+      "z": 2,
+      "r": 15,
+      "scale": 0.95,
+      "variant": 0,
+      "catalogId": "owol-form-shrub",
+      "assetId": "owol-toon-02-shrub"
+    },
+    {
+      "id": 22,
+      "type": "grass",
+      "x": 4.6,
+      "z": 2,
+      "r": 50,
+      "scale": 0.95,
+      "variant": 1,
+      "catalogId": "owol-form-grass",
+      "assetId": "owol-toon-02-grass"
+    }
+  ],
+  "pending": [],
+  "profile": {
+    "space": "모르겠어요",
+    "size": "모르겠어요",
+    "sun": "모르겠어요",
+    "mood": "모르겠어요"
+  },
+  "wish": "",
+  "camera": {
+    "position": [
+      9.099999999999998,
+      9.499999999999998,
+      11.3
+    ],
+    "target": [
+      0,
+      0.65,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

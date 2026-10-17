@@ -1,0 +1,359 @@
+{
+  "version": 6,
+  "documentVersion": 6,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 2,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 10,
+    "depthM": 8,
+    "seed": 3107,
+    "boundary": [
+      [
+        -5,
+        -4
+      ],
+      [
+        5,
+        -4
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        -5,
+        4
+      ]
+    ],
+    "surfaces": [],
+    "plantableZones": [
+      {
+        "id": "specimen-bed",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -4.75,
+                -3.75
+              ],
+              [
+                4.75,
+                -3.75
+              ],
+              [
+                4.75,
+                3.75
+              ],
+              [
+                -4.75,
+                3.75
+              ],
+              [
+                -4.75,
+                -3.75
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "jointWidthM": 0.012,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -4.75,
+            -3.75
+          ],
+          [
+            4.75,
+            -3.75
+          ],
+          [
+            4.75,
+            3.75
+          ],
+          [
+            -4.75,
+            3.75
+          ]
+        ],
+        "height": 0.03
+      }
+    ],
+    "obstacles": [],
+    "openings": [],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          9.399999999999999,
+          10.5,
+          9.6
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [
+        {
+          "id": "specimen-bed",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -4.75,
+                  -3.75
+                ],
+                [
+                  4.75,
+                  -3.75
+                ],
+                [
+                  4.75,
+                  3.75
+                ],
+                [
+                  -4.75,
+                  3.75
+                ],
+                [
+                  -4.75,
+                  -3.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "jointWidthM": 0.012,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        }
+      ],
+      "planters": [],
+      "buildings": [],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [
+    {
+      "id": 1,
+      "type": "panicle",
+      "x": -3.2249999999999996,
+      "z": -2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 0,
+      "catalogId": "owol-study-panicle",
+      "assetId": "owol-v6-panicle",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 123
+    },
+    {
+      "id": 2,
+      "type": "spirea",
+      "x": -1.075,
+      "z": -2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 1,
+      "catalogId": "owol-study-spirea",
+      "assetId": "owol-v6-spirea",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 124
+    },
+    {
+      "id": 3,
+      "type": "hosta6",
+      "x": 1.075,
+      "z": -2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 2,
+      "catalogId": "owol-study-hosta6",
+      "assetId": "owol-v6-hosta6",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 125
+    },
+    {
+      "id": 4,
+      "type": "heuchera",
+      "x": 3.2249999999999996,
+      "z": -2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 0,
+      "catalogId": "owol-study-heuchera",
+      "assetId": "owol-v6-heuchera",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 126
+    },
+    {
+      "id": 5,
+      "type": "echinacea",
+      "x": -3.2249999999999996,
+      "z": 0,
+      "r": 0,
+      "scale": 1,
+      "variant": 1,
+      "catalogId": "owol-study-echinacea",
+      "assetId": "owol-v6-echinacea",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 127
+    },
+    {
+      "id": 6,
+      "type": "salvia",
+      "x": -1.075,
+      "z": 0,
+      "r": 0,
+      "scale": 1,
+      "variant": 2,
+      "catalogId": "owol-study-salvia",
+      "assetId": "owol-v6-salvia",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 128
+    },
+    {
+      "id": 7,
+      "type": "astilbe",
+      "x": 1.075,
+      "z": 0,
+      "r": 0,
+      "scale": 1,
+      "variant": 0,
+      "catalogId": "owol-study-astilbe",
+      "assetId": "owol-v6-astilbe",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 129
+    },
+    {
+      "id": 8,
+      "type": "miscanthus",
+      "x": 3.2249999999999996,
+      "z": 0,
+      "r": 0,
+      "scale": 1,
+      "variant": 1,
+      "catalogId": "owol-study-miscanthus",
+      "assetId": "owol-v6-miscanthus",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 130
+    },
+    {
+      "id": 9,
+      "type": "carex",
+      "x": -3.2249999999999996,
+      "z": 2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 2,
+      "catalogId": "owol-study-carex",
+      "assetId": "owol-v6-carex",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 131
+    },
+    {
+      "id": 10,
+      "type": "fern",
+      "x": -1.075,
+      "z": 2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 0,
+      "catalogId": "owol-study-fern",
+      "assetId": "owol-v6-fern",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 132
+    },
+    {
+      "id": 11,
+      "type": "sedum",
+      "x": 1.075,
+      "z": 2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 1,
+      "catalogId": "owol-study-sedum",
+      "assetId": "owol-v6-sedum",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 133
+    },
+    {
+      "id": 12,
+      "type": "thyme",
+      "x": 3.2249999999999996,
+      "z": 2.2,
+      "r": 0,
+      "scale": 1,
+      "variant": 2,
+      "catalogId": "owol-study-thyme",
+      "assetId": "owol-v6-thyme",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 134
+    }
+  ],
+  "pending": [],
+  "profile": {},
+  "wish": "",
+  "camera": {
+    "position": [
+      6,
+      10,
+      12
+    ],
+    "target": [
+      0,
+      0.2,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

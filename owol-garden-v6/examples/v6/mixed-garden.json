@@ -1,0 +1,498 @@
+{
+  "version": 6,
+  "documentVersion": 6,
+  "sceneSchemaVersion": 5,
+  "catalogVersion": 2,
+  "visualProfileId": "owol-toon-02",
+  "sceneConfig": {
+    "schemaVersion": 5,
+    "presetId": "front",
+    "widthM": 8,
+    "depthM": 6,
+    "seed": 3107,
+    "boundary": [
+      [
+        -4,
+        -3
+      ],
+      [
+        4,
+        -3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        -4,
+        3
+      ]
+    ],
+    "surfaces": [
+      {
+        "id": "flagstones",
+        "name": "면 포장",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                0.75,
+                -2.75
+              ],
+              [
+                2.15,
+                -2.75
+              ],
+              [
+                2.15,
+                0.55
+              ],
+              [
+                0.75,
+                0.55
+              ],
+              [
+                0.75,
+                -2.75
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "irregular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "jointWidthM": 0.018,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            0.75,
+            -2.75
+          ],
+          [
+            2.15,
+            -2.75
+          ],
+          [
+            2.15,
+            0.55
+          ],
+          [
+            0.75,
+            0.55
+          ]
+        ],
+        "height": 0.045
+      },
+      {
+        "id": "deck",
+        "name": "면 포장",
+        "kind": "paving",
+        "geometry": [
+          [
+            [
+              [
+                1.15,
+                0.8
+              ],
+              [
+                3.65,
+                0.8
+              ],
+              [
+                3.65,
+                2.6
+              ],
+              [
+                1.15,
+                2.6
+              ],
+              [
+                1.15,
+                0.8
+              ]
+            ]
+          ]
+        ],
+        "material": "wood",
+        "pattern": "deck",
+        "direction": 0,
+        "moduleM": 0.18,
+        "seed": 3107,
+        "jointWidthM": 0.012,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            1.15,
+            0.8
+          ],
+          [
+            3.65,
+            0.8
+          ],
+          [
+            3.65,
+            2.6
+          ],
+          [
+            1.15,
+            2.6
+          ]
+        ],
+        "height": 0.045
+      }
+    ],
+    "plantableZones": [
+      {
+        "id": "soil-bed",
+        "name": "새 화단",
+        "kind": "ground",
+        "geometry": [
+          [
+            [
+              [
+                -3.5,
+                -2.75
+              ],
+              [
+                0.7,
+                -2.75
+              ],
+              [
+                0.7,
+                2.75
+              ],
+              [
+                -3.5,
+                2.75
+              ],
+              [
+                -3.5,
+                -2.75
+              ]
+            ]
+          ]
+        ],
+        "material": "stone",
+        "pattern": "regular",
+        "direction": 0,
+        "moduleM": 0.6,
+        "seed": 3107,
+        "jointWidthM": 0.012,
+        "surfaceMaterialId": "soil",
+        "edge": "ordered",
+        "polygon": [
+          [
+            -3.5,
+            -2.75
+          ],
+          [
+            0.7,
+            -2.75
+          ],
+          [
+            0.7,
+            2.75
+          ],
+          [
+            -3.5,
+            2.75
+          ]
+        ],
+        "height": 0.03
+      }
+    ],
+    "obstacles": [],
+    "openings": [],
+    "walls": [],
+    "viewpoints": {
+      "full": {
+        "position": [
+          7.52,
+          8.4,
+          7.199999999999999
+        ],
+        "target": [
+          0,
+          0.65,
+          0
+        ]
+      }
+    },
+    "representsRealSite": false,
+    "visualProfileId": "owol-toon-02",
+    "composition": {
+      "schemaVersion": 1,
+      "templateId": "empty",
+      "baseFloor": "soil",
+      "regions": [
+        {
+          "id": "soil-bed",
+          "name": "새 화단",
+          "kind": "planting",
+          "geometry": [
+            [
+              [
+                [
+                  -3.5,
+                  -2.75
+                ],
+                [
+                  0.7000000000000002,
+                  -2.75
+                ],
+                [
+                  0.7000000000000002,
+                  2.75
+                ],
+                [
+                  -3.5,
+                  2.75
+                ],
+                [
+                  -3.5,
+                  -2.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "regular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "jointWidthM": 0.012,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "flagstones",
+          "name": "면 포장",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  0.75,
+                  -2.75
+                ],
+                [
+                  2.15,
+                  -2.75
+                ],
+                [
+                  2.15,
+                  0.5499999999999998
+                ],
+                [
+                  0.75,
+                  0.5499999999999998
+                ],
+                [
+                  0.75,
+                  -2.75
+                ]
+              ]
+            ]
+          ],
+          "material": "stone",
+          "pattern": "irregular",
+          "direction": 0,
+          "moduleM": 0.6,
+          "seed": 3107,
+          "jointWidthM": 0.018,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        },
+        {
+          "id": "deck",
+          "name": "면 포장",
+          "kind": "paving",
+          "geometry": [
+            [
+              [
+                [
+                  1.15,
+                  0.7999999999999999
+                ],
+                [
+                  3.65,
+                  0.7999999999999999
+                ],
+                [
+                  3.65,
+                  2.6
+                ],
+                [
+                  1.15,
+                  2.6
+                ],
+                [
+                  1.15,
+                  0.7999999999999999
+                ]
+              ]
+            ]
+          ],
+          "material": "wood",
+          "pattern": "deck",
+          "direction": 0,
+          "moduleM": 0.18,
+          "seed": 3107,
+          "jointWidthM": 0.012,
+          "surfaceMaterialId": "soil",
+          "edge": "ordered"
+        }
+      ],
+      "planters": [],
+      "buildings": [],
+      "fixed": {
+        "walls": [],
+        "obstacles": [],
+        "openings": []
+      },
+      "pathWidthM": 0.75
+    },
+    "customZones": false
+  },
+  "items": [
+    {
+      "id": 1,
+      "type": "panicle",
+      "x": -2.5,
+      "z": -1.8,
+      "r": 0,
+      "scale": 0.8,
+      "variant": 0,
+      "catalogId": "owol-study-panicle",
+      "assetId": "owol-v6-panicle",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 771
+    },
+    {
+      "id": 2,
+      "type": "hosta6",
+      "x": -0.95,
+      "z": -1.8,
+      "r": 27,
+      "scale": 0.8,
+      "variant": 1,
+      "catalogId": "owol-study-hosta6",
+      "assetId": "owol-v6-hosta6",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 772
+    },
+    {
+      "id": 3,
+      "type": "carex",
+      "x": -2.5,
+      "z": -0.6500000000000001,
+      "r": 54,
+      "scale": 0.8,
+      "variant": 2,
+      "catalogId": "owol-study-carex",
+      "assetId": "owol-v6-carex",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 773
+    },
+    {
+      "id": 4,
+      "type": "echinacea",
+      "x": -0.95,
+      "z": -0.6500000000000001,
+      "r": 81,
+      "scale": 0.8,
+      "variant": 0,
+      "catalogId": "owol-study-echinacea",
+      "assetId": "owol-v6-echinacea",
+      "assetVersion": 1,
+      "seasonalState": "flowering",
+      "seed": 774
+    },
+    {
+      "id": 5,
+      "type": "fern",
+      "x": -2.5,
+      "z": 0.4999999999999998,
+      "r": 108,
+      "scale": 0.8,
+      "variant": 1,
+      "catalogId": "owol-study-fern",
+      "assetId": "owol-v6-fern",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 775
+    },
+    {
+      "id": 6,
+      "type": "salvia",
+      "x": -0.95,
+      "z": 0.4999999999999998,
+      "r": 135,
+      "scale": 0.8,
+      "variant": 2,
+      "catalogId": "owol-study-salvia",
+      "assetId": "owol-v6-salvia",
+      "assetVersion": 1,
+      "seasonalState": "flowering",
+      "seed": 776
+    },
+    {
+      "id": 7,
+      "type": "spirea",
+      "x": -2.5,
+      "z": 1.6499999999999997,
+      "r": 162,
+      "scale": 0.8,
+      "variant": 0,
+      "catalogId": "owol-study-spirea",
+      "assetId": "owol-v6-spirea",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 777
+    },
+    {
+      "id": 8,
+      "type": "thyme",
+      "x": -0.95,
+      "z": 1.6499999999999997,
+      "r": 189,
+      "scale": 0.8,
+      "variant": 1,
+      "catalogId": "owol-study-thyme",
+      "assetId": "owol-v6-thyme",
+      "assetVersion": 1,
+      "seasonalState": "foliage",
+      "seed": 778
+    }
+  ],
+  "pending": [],
+  "profile": {},
+  "wish": "",
+  "camera": {
+    "position": [
+      6,
+      7,
+      9
+    ],
+    "target": [
+      0,
+      0.4,
+      0
+    ],
+    "view": "edit"
+  },
+  "metadata": {
+    "purpose": "garden-preference-study",
+    "plantModelData": "visual-only",
+    "botanicalDatabaseConnected": false,
+    "representsRealSite": false
+  }
+}

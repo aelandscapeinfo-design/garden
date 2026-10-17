@@ -1,0 +1,32 @@
+// Shape studies, not verified cultivars or planting recommendations.
+// Only the twelve implemented generators are selectable. No placeholder species.
+const rows = [
+ ['panicle','목수국형','Hydrangea paniculata','shrub','branched','coarse','ovate','panicle',1.35,1.25,'white','목질 분지, 마주나는 넓은 잎, 끝으로 좁아지는 원추 꽃차례'],
+ ['spirea','일본조팝형','Spiraea japonica','shrub','arching','fine','lanceolate','corymb',.8,1.1,'pink','가는 아치형 목질 가지, 어긋나는 작은 잎, 편평한 산방 꽃차례'],
+ ['hosta6','옥잠화형','Hosta plantaginea','herb','clump','coarse','cordate','raceme',.7,.95,'white','밑동에서 모이는 넓은 잎, 활 모양 잎맥, 잎 위로 솟는 꽃대'],
+ ['heuchera','휴케라형','Heuchera sanguinea','herb','clump','coarse','palmate','bells',.65,.65,'pink','낮은 갈래잎 포기, 가늘게 분지하는 높은 꽃대와 작은 종형 꽃'],
+ ['echinacea','에키네시아형','Echinacea purpurea','herb','upright','medium','lanceolate','daisy',1,.65,'pink','직립 줄기와 잎, 튀어나온 원뿔형 중심, 아래로 젖혀진 설상화'],
+ ['salvia','숙근사루비아형','Salvia nemorosa','herb','upright','fine','lanceolate','spike',.75,.6,'purple','마주나는 좁은 잎과 직립 줄기, 층을 이룬 작은 보랏빛 꽃'],
+ ['astilbe','아스틸베형','Astilbe japonica','herb','clump','fine','compound','plume',.85,.7,'pink','갈라진 복엽, 가는 측지가 비어 보이는 깃털형 원추 꽃차례'],
+ ['miscanthus','억새형','Miscanthus sinensis','herb','grass','fine','linear','open-panicle',1.65,1.15,'cream','높은 밑동에서 휘는 긴 띠잎, 가는 축과 열린 원추 꽃차례'],
+ ['carex','사초형','Carex oshimensis','herb','sedge','fine','linear','small-spike',.42,.75,'cream','낮고 조밀한 가는 잎, 바깥으로 휘는 둥근 포기, 작은 꽃대'],
+ ['fern','홍지네고사리형','Dryopteris erythrosora','herb','fern','fine','pinnate','none',.65,.85,'','기부에서 펼쳐지는 우상엽, 좌우로 줄어드는 소엽, 구릿빛 새잎'],
+ ['sedum','큰꿩의비름형','Hylotelephium spectabile','herb','clump','coarse','succulent','flat-cyme',.6,.65,'pink','굵은 직립 줄기, 마주나는 다육질 잎, 넓고 편평한 꽃차례'],
+ ['thyme','크리핑타임형','Thymus serpyllum','herb','mat','fine','small-oval','small-cluster',.11,.75,'pink','땅을 기는 가는 가지, 작은 마주난 잎, 낮고 끊어진 꽃 군집'],
+];
+export const PLANTS_V6=Object.fromEntries(rows.map(([type,label,botanicalName,lifeForm,growthHabit,foliageTexture,leafShape,flowerForm,height,width,flowerColor,card])=>[type,{
+ type,catalogId:'owol-study-'+type,displayNameKo:label+' · 형태 예시',botanicalName,cultivar:null,
+ nameVerificationStatus:'species-reference-only',lifeForm,growthHabit,foliagePersistence:'unverified',foliageTexture,leafShape,flowerForm,
+ flowerColors:flowerColor?[flowerColor]:[],leafColors:['green'],seasonalState:'foliage',assetId:'owol-v6-'+type,assetVersion:1,morphologyFamily:type,
+ referenceUrls:['https://plants.ces.ncsu.edu/plants/'+botanicalName.toLowerCase().replaceAll(' ','-')+'/'],referenceAccessStatus:'text-reviewed-images-unverified',
+ referenceTitle:'NC State Extension Gardener Plant Toolbox — '+botanicalName,referenceCheckedAt:'2026-10-17',assetLicense:'OWOL original procedural geometry; no third-party image or mesh bundled',
+ verificationStatus:'implemented-shape-study',modelDisplayHeightM:height,modelDisplayWidthM:width,renderBounds:null,
+ rootAnchor:[0,0,0],footprint:{radiusM:width*.35},matureHeightM:null,matureWidthM:null,light:null,moisture:null,hardiness:null,
+ morphologyCard:card,structuralVariants:3,defaultSeason:'foliage',limitations:'개념 형태 예시. 품종 재현·생육 적합성 미검증. 전체 사진 정밀 대조 검수는 진행 중.',
+}]));
+export const libraryCounts=()=>({newCatalogEntries:12,newPlaceableAssets:12,distinctMorphologies:12,structuralVariantsPerAsset:3,colorOnlyVariants:0,target36Remaining:24,target60Remaining:48});
+export function plantReference(type){const p=PLANTS_V6[type];return p?{catalogId:p.catalogId,assetId:p.assetId,assetVersion:p.assetVersion,seasonalState:p.defaultSeason}:null;}
+export function plantRenderKey(item,lod='near',style='toon'){
+ const p=PLANTS_V6[item.type];
+ return p?`${item.assetId||p.assetId}@${item.assetVersion??p.assetVersion}:${lod}:v${item.variant||0}:${item.seasonalState||'foliage'}`:`${item.type}:${item.variant||0}:${lod}:${style}`;
+}

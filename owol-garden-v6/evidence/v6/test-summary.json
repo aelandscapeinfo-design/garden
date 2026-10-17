@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-17",
+  "baselineCommit": "dab07e18f0e542306b09fa28cc99a2998d7e230e",
+  "sourceReference": "Repository V5 branch source and repository source ZIP at the recorded baseline commit.",
+  "unit": {
+    "passed": 45,
+    "command": "npm run test:unit"
+  },
+  "browser": {
+    "distinctScenariosPassed": 27,
+    "executionGroups": [
+      {
+        "files": [
+          "art.spec.js",
+          "composition.spec.js",
+          "garden.spec.js"
+        ],
+        "passed": 18
+      },
+      {
+        "files": [
+          "materials-v6.spec.js",
+          "zones.spec.js"
+        ],
+        "passed": 9
+      }
+    ],
+    "note": "File groups were checked separately; do not interpret as a single uninterrupted 27-case run."
+  },
+  "standalone": {
+    "additionalBrowserScenariosPassed": 4,
+    "newAssetPendingUndoRedoSaveRoundtripCount": 12,
+    "runtimeErrors": 0,
+    "externalRuntimeRequests": 0
+  },
+  "unverified": [
+    "Full 36-asset target",
+    "cultivar fidelity",
+    "complete reference photo review",
+    "real mobile device and Safari",
+    "30fps performance target"
+  ],
+  "publication": {
+    "internalPromptsIncluded": false,
+    "privateOperationLogsIncluded": false,
+    "temporaryUploadUrlsIncluded": false
+  },
+  "publicPackaging": {
+    "unitPassed": 45,
+    "buildPassed": true,
+    "applicationHtmlUnchangedFromBrowserTestedVersion": true
+  }
+}
